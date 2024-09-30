@@ -1,0 +1,40 @@
+image: python:3.10.11
+
+stages:
+  - lint
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+
+lint:
+  stage: lint
+  script:
+    - flake8 .
+
+build:
+  stage: build
+  script:
+    - docker build -t vpbank .
+
+test:
+  stage: test
+  script:
+    - python ./source/run4.py &  # Chạy API (sử dụng run4.py)
+    - sleep 10  # Đợi API khởi động
+    - python -m streamlit run ./test/manual_test/test_streamlit_4.py --server.headless true
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying to server..."
+    - ssh datpt@34.126.151.65 'docker pull vpbank && docker run -d vpbank'
+  only:
+    - develop  # Chỉ deploy khi push lên nhánh develop

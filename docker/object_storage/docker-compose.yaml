@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+
+  minio:
+    container_name: minio
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    ports:
+      - "9001:9001"
+      - "9000:9000"
+    # volumes:
+    #   - ../../../volumes/minio:/minio_data
+    command: minio server /minio_data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 2s
+      retries: 4
+    networks:
+      - ai
+
+  # minio-connect:
+  #   image: minio/mc
+  #   container_name: minio-connect
+  #   hostname: minio-connect
+  #   entrypoint: >
+  #     /bin/sh -c " until (/usr/bin/mc config host add minio http://minio:9000 minio minio123) do echo '...waiting...' && sleep 1; done; /usr/bin/mc mb minio/warehouse; /usr/bin/mc policy set public minio/warehouse; exit 0; "
+  #   depends_on:
+  #     - minio
+  #   networks:
+  #     - chl-net
+
+networks:
+  ai:
+    external: true
+

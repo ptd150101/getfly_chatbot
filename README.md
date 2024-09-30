@@ -1,4 +1,4 @@
-# Getfly
+# Getfly_Chatbot
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.piscale.com/intern_datpt/getfly.git
+git remote add origin https://gitlab.piscale.com/intern_datpt/sacombank_chatbot.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.piscale.com/intern_datpt/getfly/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.piscale.com/intern_datpt/sacombank_chatbot/-/settings/integrations)
 
 ## Collaborate with your team
 

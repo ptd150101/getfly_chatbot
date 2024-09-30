@@ -1,0 +1,27 @@
+
+version: "3.9"
+
+services:
+  chatbot:
+    build:
+      context: ../../
+      dockerfile: ./docker/chatbot/Dockerfile
+    image: chatbot-base
+    env_file: ../../../credentials/.env
+    volumes:
+      - ../../source:/home/app
+      - ../../../credentials:/home/app/credentials
+    environment:
+      - STREAMING_MODE=false
+    networks:
+      - ai
+    deploy:
+      mode: replicated
+      replicas: 1
+    command: /bin/bash /home/app/config/start-container.sh
+    ports:
+      - "6379:6379"
+
+networks:
+  ai:
+    external: true

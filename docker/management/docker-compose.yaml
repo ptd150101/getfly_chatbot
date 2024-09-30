@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:alpine
+    ports:
+      - 9443:9000
+    volumes:
+      # - ./data:/data
+      - /$XDG_RUNTIME_DIR/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    command: --http-enabled --admin-password $$2y$$05$$t/Z/NB4XfN9KRcU4U3yAduNkbAS93uTbaobLJI7AJ9Ya4eu0t5InK
+      # username:password: admin / admin123456789
+      
+  portainer_agent:
+    container_name: portainer_agent
+    image: portainer/agent:alpine
+    # ports:
+    #   - 9010:9001
+    volumes:
+      # - ./data:/data
+      - /$XDG_RUNTIME_DIR/docker.sock:/var/run/docker.sock
+      - ~/.local/share/docker/volumes:/var/lib/docker/volumes
+    restart: unless-stopped
+
+# https://gist.github.com/deviantony/62c009b41bde5e078b1a7de9f11f5e55
+# docker run --rm httpd:2.4-alpine htpasswd -nbB admin admin123456789 | cut -d ":" -f 2 | sed 's/\$/\$\$/g'

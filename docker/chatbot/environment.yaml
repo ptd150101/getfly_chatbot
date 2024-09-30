@@ -1,0 +1,52 @@
+
+# mamba remove --name chatbot_env --all -y
+# mamba env create -f environment.yaml
+
+
+name: chatbot_env
+channels:
+  - conda-forge
+  - default
+  - pytorch
+  - fastai
+dependencies:
+  - python=3.10
+  - pip
+
+  - conda-forge:fastapi=0.110.3 
+  - conda-forge:uvicorn=0.29.0 
+
+  # pymilvus[model]
+  - pytorch:pytorch=2.2.2=py3.10_cpu_0 # cpu: 3.88GB
+  - conda-forge:accelerate=0.29.2
+  - conda-forge:sentence-transformers=2.7.0 
+  - conda-forge:nltk=3.8.1
+  - conda-forge:tokenizers=0.19.1
+  - conda-forge:transformers=4.40.1
+  - conda-forge:datasets=2.19.0
+
+  - conda-forge:scikit-learn=1.4.2
+  - conda-forge:fastavro=1.9.4
+  - conda-forge:marshmallow=3.21.2 
+
+  - conda-forge:jpype1=1.5.0 
+  - conda-forge:azure-storage-blob=12.19.1 
+  - conda-forge:jieba=0.42.1
+  - conda-forge:lxml=5.2.1
+  - conda-forge:mecab-python3=1.0.8 
+
+  - conda-forge:pydantic=2.7.1
+  - conda-forge:python-dotenv=1.0.1
+
+  - openai=1.25.0
+  - backoff=2.2.1
+  - conda-forge:tiktoken=0.6.0
+  
+  - conda-forge:minio=7.2.7
+
+  - conda-forge:pytest=8.2.0
+
+  - pip:
+    - pqdict==1.3.0
+    - pymilvus[model]==2.4.1 # gpu: 10.1GB, cpu: 3.88GB
+    # - pymilvus==2.4.1 # 1.41GB

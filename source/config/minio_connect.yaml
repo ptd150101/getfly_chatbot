@@ -1,0 +1,10 @@
+
+MINIO_MODULE:
+  access_key : "minioadmin"
+  secret_key : "minioadmin"
+  miniosecure : False
+  bucket_name : "textfile"
+  MINIO_DOCKER:
+    MINIO_API_HOST : "minio:9000"
+  MINIO_LOCAL:
+    MINIO_API_HOST : "minio:9000" 

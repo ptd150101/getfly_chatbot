@@ -1,0 +1,92 @@
+SVE_MODULE:
+  COLLECTION_NAME_PREFIX: "C98_"
+
+  DOCKER_CONNECTION:
+    alias: "default"
+    host: "milvus"
+    port: "19530"
+
+  SETUP_TABLE:
+    chunk_id:
+      NAME: "chunk_id"
+      D_TYPE: "VARCHAR"
+      PRIMARY : True
+      AUTO_ID : False
+      MAX_LENGTH: 100
+
+    element_id:
+      NAME: "element_id"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 100
+
+    doc_id:
+      NAME: "doc_id"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 100
+
+    page_content:
+      NAME: "page_content"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 10000
+
+    text:
+      NAME: "text"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 10000
+
+    embedding:
+      NAME: "embedding"
+      D_TYPE: "FLOAT_VECTOR"
+      DIM: 1536
+
+    file_name:
+      NAME: "file_name"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 100
+
+    file_directory:
+      NAME: "file_directory"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 1000
+
+    date_created:
+      NAME: "date_created"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 25
+
+    date_modified:
+      NAME: "date_modified"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 25
+
+    header_1:
+      NAME: "header_1"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 500
+
+    header_2:
+      NAME: "header_2"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 500
+
+    header_3:
+      NAME: "header_3"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 500
+
+    header_4:
+      NAME: "header_4"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 500
+
+    header_5:
+      NAME: "header_5"
+      D_TYPE: "VARCHAR"
+      MAX_LENGTH: 500
+
+  INDEXING:
+    FIELD_NAME: "embedding"
+
+    PARAMS:
+      index_type: "FLAT"
+      metric_type: "L2"
