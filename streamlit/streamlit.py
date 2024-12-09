@@ -2,63 +2,97 @@ import streamlit as st
 import requests
 import os
 import json
-AI_CHATBOT_URL = os.getenv("AI_CHATBOT_URL", "http://35.240.233.98:7000")
-top_k = 11
-# App Config
-st.set_page_config(page_title="Sacombank ChatBot", page_icon="🦜")
 
-if "chat_history" not in st.session_state:
-    st.session_state.full_chat_history = [{"role": "assistant", "content": "Hello! May I help you?"}]
-    st.session_state.chat_history = [{"role": "assistant", "content": "Hello! May I help you?"}]
-    st.session_state.summary_history = ""
-previous_summary_history = st.session_state.summary_history
-# Conversation
-for message in st.session_state.full_chat_history:
-    MESSAGE_TYPE = "AI" if message["role"] == "assistant" else "Human"
-    with st.chat_message(MESSAGE_TYPE):
+# API Configuration
+API_URL = "http://localhost:2222"
+
+# Page Configuration 
+st.set_page_config(
+    page_title="Getfly Assistant",
+    page_icon="🤖",
+    layout="wide"
+)
+
+# Initialize session state for chat history if not exists
+if "messages" not in st.session_state:
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Xin chào! Tôi là trợ lý Getfly. Tôi có thể giúp gì cho bạn?"}
+    ]
+
+# Display chat title
+st.title("💬 Getfly Assistant")
+
+# Display chat history with proper styling for each message
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
         st.write(message["content"])
+      
 
-user_query = st.chat_input("Type your message ✍")
-if user_query is not None and user_query != "":
-    with st.chat_message("Human"):
-        st.write(user_query)
-    response = requests.post(
-        url=AI_CHATBOT_URL+"/chat",
-        json={
-            "content": user_query,
-            "histories": st.session_state.chat_history,
-            "summary": previous_summary_history
-        },
-        headers={"Content-Type": "application/json"},
-        verify=False
-    )
-    print(response)
-    print(response.json())
-    content = response.json()["data"]["content"]
-    #print("content: " + content)
-    #summary = response.json()["data"]["summary_history"]
-    with st.chat_message("AI"):
-        st.write(content)
-    #print(st.session_state.chat_history)
-    st.session_state.full_chat_history.append({"role": "user", "content": user_query})
-    st.session_state.full_chat_history.append({"role": "assistant", "content": content})
-    st.session_state.chat_history.append({"role": "user", "content": user_query})
-    st.session_state.chat_history.append({"role": "assistant", "content": content})
-    if (len(st.session_state.chat_history) == top_k and len(st.session_state.chat_history) != 0):
-        previous_chat_history = st.session_state.chat_history[:top_k//2]
+# Modified message display code
+if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    
+    with st.chat_message("user"):
+        st.write(prompt)
 
-        previous_chat_history.append({"role":"previous_summary_history", "content": previous_summary_history})
-        #del st.session_state.chat_history[:int(top_k/2)]
-        st.session_state.summary_history = requests.post(
-            url=AI_CHATBOT_URL+"/summary",
-            data=json.dumps({
-                #"histories": previous_chat_history.append({"role":"previous_summary_history", "content": previous_summary_history})
-                #"histories": st.session_state.chat_history[-top_k:]
-                "histories": previous_chat_history
-            })
-        ).text
-        print(previous_chat_history)
-        del st.session_state.chat_history[:top_k//2]
+    try:
+        response = requests.post(
+            f"{API_URL}/chat",
+            json={
+                "content": prompt,
+                "histories": st.session_state.messages,
+                "summary": "",
+            },
+            headers={"Content-Type": "application/json"}
+        )
 
-    print("pre sum: " + previous_summary_history)
-    print("Summary: " + st.session_state.summary_history)
+        if response.status_code == 200:
+            responses = response.json()
+            for resp in responses.get("data", {}).get("content", []):
+                if resp.get("type") == "text":
+                    with st.chat_message("assistant"):
+                        st.write(resp["content"])
+                    # Lưu text vào session state
+                    st.session_state.messages.append({
+                        "role": "assistant", 
+                        "content": resp["content"]
+                    })
+                
+                elif resp.get("type") == "images":
+                    with st.chat_message("assistant"):
+                        cols = st.columns(5)  # Hiển thị 3 ảnh trên một hàng
+                        for idx, img_url in enumerate(resp["content"]):
+                            with cols[idx % 5]:  # Luân phiên giữa các cột
+                                st.image(
+                                    img_url,
+                                    width=200,  # Cố định chiều rộng 200px
+                                    use_column_width="auto",  # Hoặc dùng cái này để tự động điều chỉnh theo cột
+                                )
+                
+                elif resp.get("type") == "videos":
+                    with st.chat_message("assistant"):
+                        cols = st.columns(5)  # Hiển thị 2 video trên một hàng
+                        for idx, video_url in enumerate(resp["content"]):
+                            with cols[idx % 5]:
+                                st.video(
+                                    video_url,
+                                    format="video/mp4", 
+                                    start_time=0
+                                )
+
+    except Exception as e:
+        st.error(f"Error connecting to API: {str(e)}")
+# Add instructions in sidebar
+with st.sidebar:
+    st.title("Hướng dẫn sử dụng")
+    st.markdown("""
+    1. Nhập câu hỏi về Getfly vào ô chat
+    2. Nhấn Enter để gửi câu hỏi
+    3. Đợi phản hồi từ trợ lý
+    
+    **Lưu ý:** Trợ lý có thể trả lời các câu hỏi về:
+    - Sử dụng Getfly CRM
+    - Tính năng sản phẩm
+    - Hướng dẫn cài đặt
+    - API tích hợp
+    """)

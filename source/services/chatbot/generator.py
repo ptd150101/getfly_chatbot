@@ -4,8 +4,11 @@ from langfuse.decorators import observe
 import vertexai
 from vertexai.generative_models import GenerativeModel, FinishReason
 import vertexai.generative_models as generative_models
+from google.oauth2.service_account import Credentials
+
+
 # ID dự án Google Cloud
-my_project = "communi-intern-ai"
+my_project = "communi-ai"
 
 # Cấu hình tạo nội dung
 generation_config = {
@@ -33,17 +36,17 @@ class Generator:
         pass
 
 
-# Class kế thừa Generator để sử dụng VertexAI
-
 
 class VertexAIGenerator(Generator):
     def __init__(
         self,
-        project_id: str = "communi-intern-ai",
-        location: str = "us-central1",
-        model: str = "gemini-1.5-pro-001"
+        model: str,
+        credentials: str,
+        project_id: str = "communi-ai",
+        location: str = "asia-southeast1",
     ) -> None:
-        vertexai.init(project=project_id, location=location)
+        
+        vertexai.init(project=project_id, location=location, credentials=credentials)
         self.model = GenerativeModel(
             model_name=model
         )

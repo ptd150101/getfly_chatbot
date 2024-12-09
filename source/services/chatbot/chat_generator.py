@@ -12,7 +12,7 @@ from vertexai.generative_models import GenerativeModel, Part, Content, FinishRea
 import vertexai.preview.generative_models as generative_models
 
 # ID dự án Google Cloud
-my_project = "communi-intern-ai"
+my_project = "communi-ai"
 
 # Cấu hình tạo nội dung
 generation_config = {
@@ -41,11 +41,12 @@ class ChatGenerator:
 class VertexAIChatGenerator(ChatGenerator):
     def __init__(
         self,
-        project_id: str = "communi-intern-ai",
-        location: str = "us-central1",
-        model: str = "gemini-1.5-pro-001"
+        model: str,
+        credentials: str,
+        project_id: str = "communi-ai",
+        location: str = "asia-southeast1",
     ) -> None:
-        vertexai.init(project=project_id, location=location)
+        vertexai.init(project=project_id, location=location, credentials=credentials)
         self.model_name = model
 
     @observe(name="VertexAIChatGenerator", as_type="generation")

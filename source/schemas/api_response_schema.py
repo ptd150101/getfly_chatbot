@@ -45,12 +45,13 @@ class ChatMessage(BaseModel):
 
 class ChatLogicInputData(BaseModel, extra=Extra.forbid):
     user_id: Optional[str] = None
+    user_name: str = ""
     thread_id: Optional[str] = None
-    model: str = "gpt-3.5-turbo"
+    model: str = ""
     content: str = ""
     histories: List[ChatMessage] = []
     summary: str = ""
-    language: str = "en"
+    language: str = ""
     timestamp: Optional[int] = None
     metadata: Dict = {}
 
@@ -60,7 +61,7 @@ class ChatLogicRequest(BaseModel):
 
 
 class ChatLogicOutputData(BaseModel):
-    content: str = ""
+    content: List[Dict] = []
     timestamp: Optional[int] = None
     status: Status = Status(code=200, message="OK")
     metadata: Dict = {}
@@ -72,7 +73,6 @@ class ChatLogicResponse(BaseModel):
 
 
 def make_response(
-        
     api_code,
     content=None,
     log=False,
@@ -89,10 +89,19 @@ def make_response(
     status = Status(code=api_code, message=message)
 
     if content is None:
-        return ChatLogicResponse(data=ChatLogicOutputData(status=status, summary_history=summary_history))
+        return ChatLogicResponse(
+            data=ChatLogicOutputData(
+                status=status,
+                summary_history=summary_history
+            )
+        )
     else:
         return ChatLogicResponse(
-            data=ChatLogicOutputData(status=status, content=content, summary_history=summary_history)
+            data=ChatLogicOutputData(
+                status=status,
+                content=content,
+                summary_history=summary_history
+            )
         )
 
 

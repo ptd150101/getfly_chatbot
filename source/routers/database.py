@@ -1,9 +1,10 @@
 # database.py
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, MetaData
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, MetaData, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
-
-DATABASE_URL = "sqlite:///./test.db"
+from sqlalchemy import Text
+from datetime import datetime
+DATABASE_URL = "sqlite:///./history.db"
 
 # Tạo engine và session
 engine = create_engine(DATABASE_URL)
@@ -31,8 +32,10 @@ class ChatHistory(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     thread_id = Column(Integer, ForeignKey('threads.thread_id'))
     user_id = Column(String, ForeignKey('users.user_id'))
+    display_name = Column(String)  # Add display_name column
     conversation = Column(String)
-    
+    summary = Column(Text)
+    created_at = Column(DateTime, default=datetime.now)
     
 # Khởi tạo bảng trong cơ sở dữ liệu
 Base.metadata.create_all(bind=engine)

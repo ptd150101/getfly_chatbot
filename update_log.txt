@@ -1,0 +1,3270 @@
+
+=== Updating Text ===
+Second line: Với mong muốn hỗ trợ Quý khách hàng tốt nhất trong quá trình sử dụng, Getfly cung cấp các kênh hỗ trợ khác như sau:
+Half last line: 43D/9 Hồ Văn H
+New URL (child_link): https://helpdesk6.getfly.vn/cac-kenh-ho-tro
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: FAQ của Getfly là một kho tàng kiến thức giúp người dùng Getfly CRM giải đáp mọi thắc mắc về cách sử dụng phần mềm. FAQ được xây dựng một cách khoa học và hệ thống, giúp người dùng dễ dàng tìm kiếm thông tin cần thiết.
+Half last line: Link tìm kiế
+New URL (child_link): https://helpdesk6.getfly.vn/faq-cau-hoi-thuong-gap
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Đăng nhập trên App
+Half last line: Nếu bạn quên mật khẩ
+New URL (child_link): https://helpdesk6.getfly.vn/huong-dan-dang-nhap#id-1.-dang-nhap-tren-app
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Đăng nhập trên Web
+Half last line: Nếu bạn quên mật khẩ
+New URL (child_link): https://helpdesk6.getfly.vn/huong-dan-dang-nhap#id-2.-dang-nhap-tren-web
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Getfly CRM giải pháp quản lý và chăm sóc khách hàng toàn diện, giúp tối ưu việc chăm sóc khách hàng, hỗ trợ quản lý tương tác giữa các bộ phận Marketing, Sales, CSKH trên cùng một nền tảng.
+Half last line: Getfly CRM giải pháp quản lý và chăm sóc khách 
+New URL (child_link): https://helpdesk6.getfly.vn
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Giới thiệu
+Half last line: Trong trang tài liệu này, chúng
+New URL (child_link): https://helpdesk6.getfly.vn#id-1.-gioi-thieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cấu trúc các bài viết trong tài liệu
+Half last line: 2. Cấu tr
+New URL (child_link): https://helpdesk6.getfly.vn#id-2.-cau-truc-cac-bai-viet-trong-tai-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Cách tìm kiếm bài viết
+Half last line: Vì vậy anh/chị có thể xem tên tí
+New URL (child_link): https://helpdesk6.getfly.vn#id-3.-cach-tim-kiem-bai-viet
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Getfly CRM cung cấp giao diện lập trình ứng dụng (API) mở, cho phép các hệ thống của đối tác kết nối và trao đổi dữ liệu một cách linh hoạt, hiệu quả. Nhờ vậy, doanh nghiệp có thể dễ dàng tích hợp Getfly CRM với các công cụ và nền tảng khác đang sử dụng, tạo ra một hệ sinh thái quản trị thống nhất và tối ưu hóa quy trình hoạt động
+Half last line: Getfly CRM cung cấp giao diện lập trình ứng dụng (API) mở, cho phép các hệ thống củ
+New URL (child_link): https://helpdesk6.getfly.vn/tai-lieu-api
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Nội dung tài liệu
+Half last line: - 
+New URL (child_link): https://helpdesk6.getfly.vn/tai-lieu-api#id-1.-noi-dung-tai-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Chi tiết tài liệu: Tại đây
+Half last line: 2. Chi 
+New URL (child_link): https://helpdesk6.getfly.vn/tai-lieu-api#id-2.-chi-tiet-tai-lieu-tai-day
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: ĐĂNG KÝ/ĐĂNG NHẬP
+Half last line: Bước 7: Màn hình hiển thị thông ti
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/dang-ky-dang-nhap#id-1.-huong-dan-dang-ky
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: ĐĂNG KÝ/ĐĂNG NHẬP
+Half last line: (3)
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/dang-ky-dang-nhap#id-2.1.-dang-nhap-bang-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: ĐĂNG KÝ/ĐĂNG NHẬP
+Half last line: Lưu ý: Tính năng đăn
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/dang-ky-dang-nhap#id-2.2.-dang-nhap-bang-faceid
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: ĐĂNG KÝ/ĐĂNG NHẬP
+Half last line: 3. Video hư
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/dang-ky-dang-nhap#id-3.-video-huong-dan-cac-buoc-khoi-tao-he-thong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: TẢI APP
+Half last line: - Tải app trê
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/tai-app#id-1.-tai-ung-dung-qua-duong-link
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: TẢI APP
+Half last line: Bước 5: Trải nghiệm sản 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/tai-app#id-2.-mo-kho-ung-dung-google-play-app-store-de-tai-ung-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: TẢI APP
+Half last line: 3. Video 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/tai-app#id-3.-video-huong-dan-tai-app-getfly-crm
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: THÔNG TIN TÀI KHOẢN
+Half last line: Để thay đổi th
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/thong-tin-tai-khoan#id-1.-thay-doi-thong-tin-ca-nhan
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: THÔNG TIN TÀI KHOẢN
+Half last line: Màn hình chỉnh sửa thông tin hiể
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/thong-tin-tai-khoan#id-1.1.-truy-cap-tu-man-hinh-chinh
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: THÔNG TIN TÀI KHOẢN
+Half last line: Màn hình chỉnh sửa thông tin hiể
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/thong-tin-tai-khoan#id-1.2.-truy-cap-tu-tab-mo-rong
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: THÔNG TIN TÀI KHOẢN
+Half last line: Điền thông tin bạn muốn để
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/thong-tin-tai-khoan#id-2.-thay-doi-mat-khau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: TỔNG QUAN
+Half last line: - Vượt trội trong quản lý tập trung m
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/tong-quan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích của Module Kho trên App Getfly
+Half last line: - Nhân sự dễ dàng tìm kiếm thông 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-1.-loi-ich-cua-module-kho-tren-app-getfly
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Chuyển kho
+Half last line: Nếu phiếu chuyển kho ở trạng thái Chờ duyệt thì T
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-5.2.-chi-tiet-phieu-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Chuyển kho
+Half last line: - Thờ
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-5.3.-tim-kiem-phieu-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Tồn kho
+Half last line: Lưu ý: bạn sẽ chỉ xem đư
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-6.-ton-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Kiểm kho
+Half last line: Chi tiết phiếu kiểm kho: Cung cấp thông tin chi tiết về t
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-7.-kiem-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Thẻ kho
+Half last line: - Số
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-8.-the-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 9. Bảng xuất nhập tồn
+Half last line: Sau đó bấm xác n
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-9.-bang-xuat-nhap-ton
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Kho
+Half last line: Màn hình quản lý kho hiển thị danh s
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-2.-quan-ly-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Nhập kho
+Half last line: - M
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-3.1.-danh-sach-phieu-nhap-kho
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Nhập kho
+Half last line: Nếu phiếu nhập kho ở t
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-3.2.-chi-tiet-phieu-nhap-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Nhập kho
+Half last line: - Thờ
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-3.3.-tim-kiem-phieu-nhap-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Xuất kho
+Half last line: - M
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-4.1.-danh-sach-phieu-xuat-kho
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Xuất kho
+Half last line: Nếu phiếu xuất kho ở t
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-4.2.-chi-tiet-phieu-xuat-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Xuất kho
+Half last line: - Thờ
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-4.3.-tim-kiem-phieu-xuat-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Chuyển kho
+Half last line: - N
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/kho#id-5.1.-danh-sach-phieu-chuyen-kho
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Lợi ích
+Half last line: - Tạo và theo dõi dự án: App Getfly CRM cho phép nhân viê
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-cong-viec#id-1.-loi-ich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa công việc
+Half last line: Sau khi đã điền xon
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-cong-viec#id-2.1.-tao-moi-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa công việc
+Half last line: Màn hình thêm mới công vi
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-cong-viec#id-2.2.-tao-moi-cong-viec-trong-chi-tiet-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa công việc
+Half last line: Để nhập trao đổi hay bình luận thì bạn điền vào phần trả lời phía cuối màn hình. Để tag tên 1 tài khoản mà bạ
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-cong-viec#id-2.3.-chi-tiet-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý công việc
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-cong-viec#id-3.-quan-ly-cong-viec
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Lợi ích
+Half last line: - Tiết kiệm thời gian và chi phí: App Getfly CRM giúp
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-1.-loi-ich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa khách hàng
+Half last line: Bước 3: Sau khi điền x
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-2.1.-tao-moi-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa khách hàng
+Half last line: + Báo giá: 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-2.2.-chi-tiet-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa khách hàng
+Half last line: Để chỉnh sửa thông tin khách hàng, 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-2.3.-sua-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa khách hàng
+Half last line: Để chỉnh sửa thông tin khách hàng
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-2.4.-xoa-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Tạo mới, sửa, xóa khách hàng
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-3.1.-tim-kiem-khach-hang
+Number of records updated: 4
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/quan-ly-khach-hang#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: Quản lý người dùng là một chức năng quan trọng trong Getfly CRM, cho phép bạn tạo, sửa, xóa và phân quyền cho các tài khoản người dùng trên hệ thống
+Half last line: Quản lý người dùng là một chức năng q
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cai-dat/quan-ly-nguoi-dung
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Thêm mới người dùng
+Half last line: Sau khi cập nhật xong các thô
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cai-dat/quan-ly-nguoi-dung#id-1.-them-moi-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý người dùng
+Half last line: Màn hình thông tin chi t
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cai-dat/quan-ly-nguoi-dung#id-2.-quan-ly-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Sửa người dùng
+Half last line: Để sửa thông tin người dù
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cai-dat/quan-ly-nguoi-dung#id-3.-sua-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Xóa người dùng
+Half last line: Để sửa thông tin người dù
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cai-dat/quan-ly-nguoi-dung#id-4.-xoa-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng module ticket trên app
+Half last line: - Khách hàng ch
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/ticket#id-1.-loi-ich-khi-su-dung-module-ticket-tren-app
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo mới ticket
+Half last line: Lưu ý: Tạo mới này c
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/ticket#id-2.-tao-moi-ticket
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý ticket
+Half last line: - Tab Tất cả: hiển thị danh sách các yêu cầu (ticket)
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/ticket#id-3.1.-man-hinh-danh-sach-ticket
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý ticket
+Half last line: - Thời gian tạo Ticket: hôm nay, hôm
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/ticket#id-3.2.-loc-va-tim-kiem-ticket
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/ticket#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng module tổng đài trên app
+Half last line: - Có thể thao tác các chức năng liên quan đế
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-1.-loi-ich-khi-su-dung-module-tong-dai-tren-app
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Quyền Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-2.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý cuộc gọi
+Half last line: - Gọ
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-3.1.-xem-thong-ke-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý cuộc gọi
+Half last line: - Có thể kết hợp tìm kiếm theo 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-3.2.-tim-kiem-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thao tác khác
+Half last line: Để xem chi tiết thông tin cuộc gọi bạn click vào chi 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-4.1.-xem-chi-tiet-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thao tác khác
+Half last line: (3) Thêm mới
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-4.2.-them-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thao tác khác
+Half last line: Để xóa cuộc gọi
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-4.3.-xoa-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/cham-soc-khach-hang/tong-dai#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích chấm công trên app
+Half last line: - Nhân viên t
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/cham-cong#id-1.-loi-ich-cham-cong-tren-app
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: Để sử dụng được tính năng chấm công trên a
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/cham-cong#id-2.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn sử dụng
+Half last line: Hệ thống khi chấm công th
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/cham-cong#id-3.1.-cham-cong-o-man-hinh-trang-chu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn sử dụng
+Half last line: Màn hình
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/cham-cong#id-3.2.-cham-cong-o-man-hinh-mo-rong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thống kê chi tiết
+Half last line: Bạn có thể xem thông tin chi tiết 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/cham-cong#id-4.-thong-ke-chi-tiet
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng Chat nội bộ của Getfly
+Half last line: - Nâng cao năng suất là
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-1.-loi-ich-khi-su-dung-chat-noi-bo-cua-getfly
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Trò chuyện cá nhân
+Half last line: Nhấp vào tên của n
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-2.-tro-chuyen-ca-nhan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Nhóm chat
+Half last line: Thêm các thành vi
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-3.1.-tao-moi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Nhóm chat
+Half last line: Ngoài ra, bạn còn có 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-3.2.-gui-tin-nhan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Nhóm chat
+Half last line: Vuốt sang trái trên cuộc
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-3.3.-xoa-nhom-chat
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/chat-noi-bo#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng phiếu yêu cầu
+Half last line: Tính năng này
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/quy-trinh-phieu-yeu-cau#id-1.-loi-ich-khi-su-dung-phieu-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: Hướng dẫn
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/quy-trinh-phieu-yeu-cau#id-2.-phan-quyen
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Tạo quy trình
+Half last line: Sau khi tạo quy trì
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/quy-trinh-phieu-yeu-cau#id-3.-tao-quy-trinh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tạo phiếu yêu cầu
+Half last line: Sau khi tạo phiếu yêu c
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/quy-trinh-phieu-yeu-cau#id-4.-tao-phieu-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Trang chủ
+Half last line: Để xem được các danh mục trên, bạn phải được phân 
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích của workstream
+Half last line: - Tích hợp với các tính năng khác của Getfly C
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/workstream#id-1.-loi-ich-cua-workstream
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo tin tức trên workstream
+Half last line: (7) Bài viết sa
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/workstream#id-2.-tao-tin-tuc-tren-workstream
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý workstream
+Half last line: Với tính năng hiển thị danh sách các bài workst
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/workstream#id-3.-quan-ly-workstream
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/app-getfly/huong-dan-s-dung/trang-chu/workstream#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: Định nghĩa dữ liệu trong Getfly CRM đóng vai trò quan trọng, giúp doanh nghiệp:
+Half last line: Getfly cung cấp các trường dữ liệu mặc định cho các đối tượ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Tạo mới định nghĩa dữ liệu
+Half last line: -Những trường 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-1.-tao-moi-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Chỉnh sửa/xóa/khôi phục định nghĩa dữ liệu
+Half last line: - Có thể điều chỉnh tên thuộc tính và dạng dữ liệu cho các 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-2.1.-chinh-sua-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Chỉnh sửa/xóa/khôi phục định nghĩa dữ liệu
+Half last line: Lưu ý: các trườn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-2.2.-xoa-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Chỉnh sửa/xóa/khôi phục định nghĩa dữ liệu
+Half last line: Muốn khôi phục lại đị
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-2.3.-khoi-phuc-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Sắp xếp định nghĩa dữ liệu
+Half last line: Tính năng này giúp bạn tùy chỉnh giao diện 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-3.-sap-xep-dinh-nghia-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/cai-dat-dinh-nghia-du-lieu#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Phân loại theo Nhóm khách hàng
+Half last line: Một khách h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-1.-phan-loai-theo-nhom-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Phân loại theo Mối quan hệ
+Half last line: - Đừng quên (Trạng thái tự động): Khi số 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-3.1.-them-moi-moi-quan-he
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Phân loại theo Mối quan hệ
+Half last line: Để chỉnh sửa mối quan hệ bạn truy
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-3.2.-chinh-sua-moi-quan-he
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Phân loại theo Mối quan hệ
+Half last line: Muốn khôi phục lại
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-3.3.-xoa-khoi-phuc-moi-quan-he
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Phân loại theo Nhóm khách hàng
+Half last line: (3) Mã nhóm 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-1.1.-them-moi-nhom-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Phân loại theo Nhóm khách hàng
+Half last line: Để chỉnh sửa nhóm khách hàng bạn t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-1.2.-chinh-sua-nhom-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Phân loại theo Nhóm khách hàng
+Half last line: Muốn khôi phục lại 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-1.3.-xoa-khoi-phuc-nhom-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân loại theo Nguồn khách hàng
+Half last line: Nguồn khách hàng trong Getfly CRM là tính năng giúp bạn ghi nhận và quản lý
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-2.-phan-loai-theo-nguon-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân loại theo Nguồn khách hàng
+Half last line: Hệ thống hiển thị màn hình t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-2.1.-them-moi-nguon-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân loại theo Nguồn khách hàng
+Half last line: Để chỉnh sửa nguồn khách hàng bạn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-2.2.-chinh-sua-nguon-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân loại theo Nguồn khách hàng
+Half last line: Muốn khôi phục lại 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-2.3.-xoa-khoi-phuc-nguon-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Phân loại theo Mối quan hệ
+Half last line: Phân loại khách hàng theo mối quan hệ là một công
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/phan-loai-khach-hang#id-3.-phan-loai-theo-moi-quan-he
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Quản lý người dùng là một chức năng quan trọng trong Getfly CRM, cho phép bạn tạo, sửa, xóa và phân quyền cho các tài khoản người dùng trên hệ thống
+Half last line: Quản lý người dùng là một chức năng q
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Phân quyền quản lý người dùng
+Half last line: - Xóa: X
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung#id-1.-phan-quyen-quan-ly-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa tài khoản
+Half last line: Sau khi điền đầy đủ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung#id-2.1.-them-moi-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa tài khoản
+Half last line: Sau khi chỉnh sử
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung#id-2.2.-chinh-sua-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa tài khoản
+Half last line: - Trước khi tiến hành xóa tài khoản người dùng trong Getfly CRM, bạn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung#id-2.3.-xoa-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/tao-tai-khoan-nguoi-dung#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: Phân quyền đóng vai trò then chốt trong Getfly CRM, giúp bạn quản lý quyền truy cập và sử dụng phần mềm hiệu quả cho từng cá nhân hoặc nhóm người dùng. Nhờ vậy, bạn có thể:
+Half last line: - Nâng cao tính minh bạch: Mỗi người dù
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hướng dẫn phân quyền
+Half last line: - Hệ thống có
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phan-quyen#id-1.-huong-dan-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Các quyền cơ bản trên hệ thống
+Half last line: TTTên quyềnGiải thích1Truy cậpĐược phép truy cập Module – Chức năngKhi quyền này được lựa chọn, Module – Chức năng sẽ hiển thị trên giao diện hệ thống.2ThêmĐược 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phan-quyen#id-2.-cac-quyen-co-ban-tren-he-thong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phan-quyen#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: Cài đặt thông tin phòng ban trên Getfly sẽ giúp bạn:
+Half last line: - Phân quyền truy cập: Getfly giúp bạn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Phân quyền quản lý phòng ban
+Half last line: - Xóa: X
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban#id-1.-phan-quyen-quan-ly-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn tạo mới, sửa, xóa phòng ban
+Half last line: Sau khi điền đầy đủ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban#id-2.1.-tao-moi-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn tạo mới, sửa, xóa phòng ban
+Half last line: Sau khi chỉnh sử
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban#id-2.2.-chinh-sua-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn tạo mới, sửa, xóa phòng ban
+Half last line: - Mỗi nhân viê
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban#id-2.3.-xoa-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-phong-ban#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: 1. Hướng dẫn thiết lập thông tin công ty
+Half last line: (9) W
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-cong-ty#id-1.-huong-dan-thiet-lap-thong-tin-cong-ty
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Video hướng dẫn
+Half last line: 2. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-cong-ty#id-2.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Phân loại khách hàng theo tỉnh thành phố quốc gia quận huyện là một công cụ hữu ích giúp doanh nghiệp hiểu rõ thị trường mục tiêu, tối ưu hóa chiến dịch marketing, cải thiện dịch vụ khách hàng, quản lý hàng tồn kho hiệu quả và phân tích hiệu quả hoạt động kinh doanh
+Half last line: Để cấu hình thông tin liên quan về địa lý nh
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-quan-huyen-tinh-thanh-pho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quốc gia
+Half last line: Muốn khôi phục lại q
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-quan-huyen-tinh-thanh-pho#id-1.-quoc-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Thành phố
+Half last line: Muốn khôi phục lại t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-quan-huyen-tinh-thanh-pho#id-2.-thanh-pho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quận huyện
+Half last line: Muốn khôi phục lại q
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-quan-huyen-tinh-thanh-pho#id-3.-quan-huyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-quan-huyen-tinh-thanh-pho#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: Cài đặt thông tin tài khoản trên Getfly sẽ giúp bạn:
+Half last line: - Tăng cường hiệu quả làm việc: Cài
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Cài đặt thông tin cá nhân
+Half last line: (6)
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-tai-khoan#id-1.-cai-dat-thong-tin-ca-nhan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cài đặt thông báo
+Half last line: Lưu ý: các chức năng hiển thị t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-tai-khoan#id-2.-cai-dat-thong-bao
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thay đổi mật khẩu tài khoản
+Half last line: Để thực hiện các bước tiếp 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-tai-khoan#id-3.-thay-doi-mat-khau-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/cac-buoc-cai-dat-he-thong/thiet-lap-thong-tin-tai-khoan#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: CNV Loyalty là nền tảng chăm sóc khách hàng và quản lý chương trình khách hàng trung thành (Loyalty) "tất cả trong một" được phát triển bởi Công ty CNV Holdings. Hệ thống Loyalty Hub quản trị đa kênh của CNV Loyalty đã được kết nối API đồng bộ dữ liệu với hệ thống CRM Getfly
+Half last line: Khi có các hoạt động về bán hàng, cập
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/cnv-loyalty
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Về phần tích hợp giữa Getfly và CNV Loyalty
+Half last line: + Về thao tác tích hợp phía CNV L
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/cnv-loyalty#id-1.-ve-phan-tich-hop-giua-getfly-va-cnv-loyalty
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Mô tả chi tiết luồng vận hành
+Half last line: - Doanh nghiệp tạo 1 đơn hàng mới c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/cnv-loyalty#id-2.1.-luong-tu-getfly-qua-cnv-loyalty
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Mô tả chi tiết luồng vận hành
+Half last line: - Sau đó doanh nghiệp có thể xử lý đơn hàng tập trung trên Getfly và thay đổi trạng thái đơn hàng cũng như trạng thái vận
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/cnv-loyalty#id-2.2.-luong-tu-cnv-loyalty-qua-getfly
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Lưu ý
+Half last line: - Các thông tin
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/cnv-loyalty#id-3.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Dropbox là một dịch vụ lưu trữ tập tin trực tuyến cho phép người dùng tạo thư mục đặc biệt trên máy tính của mình, từ đó Dropbox sẽ đồng bộ hóa nội dung trong thư mục đó tương ứng với nội dung thư mục được tự động tạo trên Dropbox. Dropbox được sử dụng bởi nhiều cá nhân và doanh nghiệp trên toàn thế giới để lưu trữ các tập tin quan trọng, chia sẻ tập tin với nhau và truy cập tập tin từ mọi nơi.
+Half last line: Dropbox là một dịch vụ lưu trữ tập tin trực tuyến cho phép người dùng tạo thư mục đặc biệt trên máy
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Mô tả kết nối
+Half last line: - Dễ dàng thao tác ngay t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-1.-mo-ta-ket-noi
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Dropbox
+Half last line: Bước 3: Sau khi kết nối
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-2.1.-cac-buoc-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Dropbox
+Half last line: Để ngắt kết nối với Google Drive với Get
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-2.2.-ngat-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn upload tài liệu lên Dropbox
+Half last line: - Khi bạn tạo file hoặc thêm thư mục trên hệ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-3.1.-tai-muc-tai-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn upload tài liệu lên Dropbox
+Half last line: - Bạn click vào đính
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-3.2.-tai-trao-doi-khach-hang-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Lưu ý
+Half last line: - Quyền liên quan tới truy cậ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-4.-luu-y
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 5. Log ghi nhận thao tác
+Half last line: - Quyền thêm 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/dropbox#id-5.-log-ghi-nhan-thao-tac
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Danh sách các đối tác email đã kết nối với Getfly
+Half last line: STTEmailHướng dẫn tích hợp1Sendgridhttps
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/email
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi tích hợp các đơn vị vận chuyển trên Getfly CRM
+Half last line: - Tránh sai
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-1.-loi-ich-khi-tich-hop-cac-don-vi-van-chuyen-tren-getfly-crm
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Lưu ý khi tích hợp đối tác vận chuyển
+Half last line: - Tài khoản cầ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-2.-luu-y-khi-tich-hop-doi-tac-van-chuyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tích hợp đối tác vận chuyển
+Half last line: Để tích hợp đối tác vận chuyển bạn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-3.-huong-dan-tich-hop-doi-tac-van-chuyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Danh sách đối tác vận chuyển kết nối với Getfly
+Half last line: STTĐơn vị vận chuyểnHướng dẫn kết nối1Giao hàng tiết kiệmhttps://wiki.getfly.vn/portal
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-4.-danh-sach-doi-tac-van-chuyen-ket-noi-voi-getfly
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Hướng dẫn tạo vận đơn
+Half last line: Mã vận đơn sẽ được hiển thị ở m
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-5.-huong-dan-tao-van-don
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Video hướng dẫn
+Half last line: 6. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/giao-van#id-6.-video-huong-dan
+Number of records updated: 5
+
+=== Updating Text ===
+Second line: Google Calendar là một ứng dụng quản lí thời gian của Google cho phép bạn theo dõi các hoạt động hàng ngày như các cuộc hẹn, sự kiện, sinh nhật bạn bè,... và còn nhiều tính năng hữu ích khác. Vì vậy Getfly có phát triển tính năng tích hợp với Google Calendar như sau:
+Half last line: Google Calendar là một ứng dụng quản lí thời gian của Google cho p
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-calendar
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Mô tả kết nối
+Half last line: - Khi thêm mới công việc thì sẽ có emai
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-calendar#id-1.-mo-ta-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Google drive
+Half last line: Các lịch hẹn được tạ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-calendar#id-2.1.-cac-buoc-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Google drive
+Half last line: Để ngắt kết nối với Google Calendar 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-calendar#id-2.2.-ngat-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Lưu ý
+Half last line: - Mỗi tài khoản G
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-calendar#id-3.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Google Drive là dịch vụ lưu trữ và đồng bộ hóa tập tin được tạo bởi Google giúp người dùng có thể lưu trữ tập tin trên đám mây, chia sẻ tập tin, và chỉnh sửa tài liệu, văn bản, bảng tính..và được rất nhiều người dùng tin tưởng và sử dụng phổ biến trên thế giới. Vì vậy Getfly có phát triển tính năng tích hợp với Google drive như sau:
+Half last line: Google Drive là dịch vụ lưu trữ và đồng bộ hóa tập tin được tạo bởi Google giúp ngư
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Mô tả kết nối
+Half last line: - Dễ dàng thao tác ngay t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-1.-mo-ta-ket-noi
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Google drive
+Half last line: -  Hiển thị trên hệ thống:
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-2.1.-cac-buoc-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Google drive
+Half last line: - Khi ngắt kết nối những dữ liệu đã tả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-2.2.-ngat-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn upload tài liệu lên Google drive
+Half last line: - Khi bạn tạo file hoặc thêm thư mục trên hệ t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-3.1.-tai-muc-tai-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn upload tài liệu lên Google drive
+Half last line: - Bạn click vào đính 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-3.2.-tai-trao-doi-khach-hang-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Lưu ý
+Half last line: - Khi kết nối thành công với google drive 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-4.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Log ghi nhận thao tác
+Half last line: - Fil
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/google-drive#id-5.-log-ghi-nhan-thao-tac
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: KiotViet là nhà cung cấp phần mềm quản lý bán hàng
+Half last line: KiotViet là 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/kiotviet
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Về phần tích hợp giữa Getfly và KiotViet
+Half last line: - Hiện tại kết nối tích hợp giữa Kiot Việt và Getfl
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/kiotviet#id-1.-ve-phan-tich-hop-giua-getfly-va-kiotviet
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn tích hợp
+Half last line: Sau khi click kết nối, bạn chọn các t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/kiotviet#id-2.-huong-dan-tich-hop
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thông tin kết nối giữa Getfly và KiotViet
+Half last line: - Khi tạo mới đơn hàng trên Kiot Việt, nếu trong thông tin truyền sang 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/kiotviet#id-3.-thong-tin-ket-noi-giua-getfly-va-kiotviet
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Lưu ý
+Half last line: - Tài khoản nhân viên trên Kiotviet khi tạo đơn hàng sẽ đẩy về 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/kiotviet#id-4.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Ladipage là một nền tảng tạo Landing Page (trang đích), giúp bạn dễ dàng thiết kế và xây dựng những trang Landing Page ấn tượng, thu hút khách hàng tiềm năng và tăng tỷ lệ chuyển đổi
+Half last line: Ladipage là một nền tảng tạo Landing Page (tr
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Về phần tích hợp giữa Getfly và Ladipage
+Half last line: - Việc tích hợ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-1.-ve-phan-tich-hop-giua-getfly-va-ladipage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn tích hợp Getfly và Ladipage
+Half last line: Sau khi cài đặt Form Ladipage bạn t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-2.-huong-dan-tich-hop-getfly-va-ladipage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn cài đặt đổ thông tin các trường dữ liệu
+Half last line: - Lấy giá trị mặc 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-3.1.-them-co-hoi-vao-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn cài đặt đổ thông tin các trường dữ liệu
+Half last line: + Danh sách lấy giá trị
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-3.2.-them-thong-tin-truong-du-lieu-dang-selectlist
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn cài đặt đổ thông tin các trường dữ liệu
+Half last line: - Giá trị mặc địn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-3.2.-them-thong-tin-nguon-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn cài đặt đổ thông tin các trường dữ liệu
+Half last line: Để lấy được danh sách
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-3.3.-them-thong-tin-nhom-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Lưu ý
+Half last line: 2
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/ladipage#id-4.-luu-y
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: Shopee cung cấp cho người dùng một nền tảng để mua bán và thanh toán trực tuyến một cách dễ dàng và an toàn
+Half last line: Shopee cung cấp cho người 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Mô tả kết nối
+Half last line: - Dễ dàng quản lý, the
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-1.-mo-ta-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Shopee
+Half last line: - Trên Getfly, để kết n
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-2.1.-dieu-kien-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Shopee
+Half last line: Sau khi cài đặt xong,
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-2.2.-cac-buoc-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn kết nối Shopee
+Half last line: - Để đăng xuất kết nối giữa tài khoản Sh
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-2.3.-ngat-ket-noi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thông tin kết nối giữa Shoppe và Getfly
+Half last line: Các thông tin khách hàng sẽ đổ về từ Shoppe là: Tên khách hàng, Địa chỉ, Số điện thoại trên đơ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-3.1.-thong-tin-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thông tin kết nối giữa Shoppe và Getfly
+Half last line: + Doanh thu đơn hàng của
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-3.2.-thong-tin-don-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thông tin kết nối giữa Shoppe và Getfly
+Half last line: Thông tin sản phẩm từ Shoppe sẽ đổ v
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-3.3.-thong-tin-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Lưu ý
+Half last line: - Các đơn hàng, k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/shopee#id-4.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Danh sách các đối tác sms đã kết nối với Getfly
+Half last line: STTTổng đàiHướng dẫn tích hợp1VNPT - CN Đà 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/sms
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Danh sách các đối tác tổng đài đã kết nối với Getfly
+Half last line: STTTổng đàiHướng dẫn tích hợp1GTChttps://wiki.getfly.vn/portal/post/23142CGVhttps://wiki.getfly.vn/portal/post/23123Abenlahttps://wi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/tong-dai
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Khái niệm ZNS
+Half last line: - Doanh nghiệp phù hợp: mu
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-1.-khai-niem-zns
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Lợi ích khi tích hợp ZNS
+Half last line: - Theo 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-2.-loi-ich-khi-tich-hop-zns
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Phân quyền
+Half last line: - Xóa: Hiển thị nút xóa ở c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-3.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Danh sách đối tác ZNS kết nối với Getfly
+Half last line: STTĐơn vị ZNSHướng dẫn kết nối1Etelecomhttps://wiki.get
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-4.-danh-sach-doi-tac-zns-ket-noi-voi-getfly
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5.1. Gửi ZNS thủ công
+Half last line: Lưu ý: Các biến trong ZNS hiện tại đang tương tự như SMS, các
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-5.1.-gui-zns-thu-cong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5.2. Gửi ZNS tự động
+Half last line: Bước 4: Hoàn tất bạn s
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-5.2.-gui-zns-tu-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Quản lý ZNS
+Half last line: Lưu ý: mặc định khi và
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-6.-quan-ly-zns
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Video hướng dẫn
+Half last line: 7. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/doi-tac-ket-noi/zns#id-7.-video-huong-dan
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. KPI Affiliate là gì?
+Half last line: - Đây cũng là một chiến lược Marketing của cty, N
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-1.-kpi-affiliate-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI Affiliate
+Half last line: - Nếu là trưởng phòng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-2.-phan-quyen-kpi-affiliate
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo Affiliate
+Half last line: (2) Lựa chọn thời gi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-3.-tong-quan-bao-cao-affiliate
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo Affiliate
+Half last line: Ngày tháng 6 có tổng số khách hàng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-3.1.-so-luong-khach-hang-duoc-gioi-thieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo Affiliate
+Half last line: Tổng giá trị m
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-3.2.-tong-so-khach-duoc-gioi-thieu-va-mua-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo Affiliate
+Half last line: (7) Thành tiền
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-3.3.-thong-ke-khach-hang-gioi-thieu-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo Affiliate
+Half last line: (7) Thành tiền
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-3.4.-thong-ke-nhan-vien-gioi-thieu-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-affiliate#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. KPI chiến dịch là gì?
+Half last line: KPI Chiến dịch là bản báo cáo thống kê chi tiết các hoạt động trong một ch
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-chien-dich#id-1.-kpi-chien-dich-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI chiến dịch
+Half last line: - Xem tất cả: x
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-chien-dich#id-2.-phan-quyen-kpi-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI chiến dịch
+Half last line: (2) Lựa chọn thời
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-chien-dich#id-3.-tong-quan-kpi-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thống kê khách hàng trong chiến dịch
+Half last line: Biểu đồ thống kê các
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-chien-dich#id-5.-thong-ke-khach-hang-trong-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Video hướng dẫn
+Half last line: 6. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-chien-dich#id-6.-video-huong-dan
+Number of records updated: 5
+
+=== Updating Text ===
+Second line: 1. KPI Công việc là gì?
+Half last line: - Thống k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-1.-kpi-cong-viec-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI công việc
+Half last line: - Trưởng phòng mặ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-2.-phan-quyen-kpi-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI Công việc
+Half last line: (3) Bảng thống k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-3.-tong-quan-kpi-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thống kê theo trạng thái công việc
+Half last line: (9) Hủy
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-4.-thong-ke-theo-trang-thai-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thống kê theo khối lượng công việc
+Half last line: Cách tính trung bình công việc dự kiến/ h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-5.-thong-ke-theo-khoi-luong-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-cong-viec#id-6.-video-huong-dan
+Number of records updated: 5
+
+=== Updating Text ===
+Second line: 1. KPI khách hàng là gì?
+Half last line: - Hiệ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-1.-kpi-khach-hang-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI khách hàng
+Half last line: - Xem tất cả: x
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-2.-phan-quyen-kpi-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan khách hàng
+Half last line: Tính năng này giúp người dùng theo dõi mức 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-3.1.-bieu-do-tang-truong-so-luong-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan khách hàng
+Half last line: Biểu đồ này giúp người dùng trực quan hóa tỷ lệ khách hàng 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-3.2.-bieu-do-so-luong-khach-hang-theo-moi-quan-he
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tỷ lệ chuyển đổi
+Half last line: Dựa vào bảng tỷ lệ chuyển đổi bạn c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-4.-ty-le-chuyen-doi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Chân dung khách hàng
+Half last line: Ví dụ: Nếu lọc thời gian là tháng tr
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-5.-chan-dung-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Chu kỳ khách hàng
+Half last line: (5) Kết quả: t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-6.-chu-ky-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Thống kê hành trình khách hàng
+Half last line: Lưu ý: Thống kê theo phòng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-7.-thong-ke-hanh-trinh-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Video hướng dẫn
+Half last line: 8. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-khach-hang#id-8.-video-huong-dan
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 1. KPI nhân viên là gì?
+Half last line: - Hệ thống tự động cập nhật báo cá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-1.-kpi-nhan-vien-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI nhân viên
+Half last line: - Xem tất cả: x
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-2.-phan-quyen-kpi-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan nhân viên
+Half last line: Tiếp theo, bên dưới sẽ là chi tiết biến động của từng 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-3.-tong-quan-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tỷ lệ chuyển đổi
+Half last line: Bạn có thể click vào số 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-4.-ty-le-chuyen-doi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Báo cáo công việc
+Half last line: - Báo cáo khách hàng được chăm sóc: thống kê những khách h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-5.-bao-cao-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Chu kỳ khách hàng
+Half last line: Bạn có thể click vào con số sẽ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-6.-chu-ky-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Thống kê hành trình khách hàng
+Half last line: Thống kê theo nhân viên 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-7.-thong-ke-hanh-trinh-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Thống kê doanh số
+Half last line: - Đã mua: Với điều kiện lọc “đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-8.-thong-ke-doanh-so
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 9. Video hướng dẫn
+Half last line: 9. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-nhan-vien#id-9.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. KPI Optin form là gì?
+Half last line: - Danh sách trang đặt form đăng ký
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-1.-kpi-optin-form-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI Optinform
+Half last line: - Trưởng phòng mặc
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-2.-phan-quyen-kpi-optinform
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI Optin form
+Half last line: (2) Lựa chọn thời
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-3.-tong-quan-kpi-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các báo cáo Optinform
+Half last line: Biểu đồ này thể hiện xu hướng số lượng khách hàng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-4.1.-bieu-do-tang-truong-so-luong-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các báo cáo Optinform
+Half last line: - Tổng giá trị mua hàng: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-4.2.-bieu-do-so-khach-hang-dang-ky-tren-tong-so-khach-hang-xem-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các báo cáo Optinform
+Half last line: Biểu đồ utm source và utm campain sẽ cho bạn biết được
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-4.3.-bieu-do-so-luong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các báo cáo Optinform
+Half last line: (16) UTM Term: Sử dụng chủ yếu trong Adwords hoặc
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-4.4.-danh-sach-khach-hang-dang-ky
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các báo cáo Optinform
+Half last line: Bảng danh sách cung cấp tổng quan về hiệu quả của các trang đặt form đăng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-4.5.-thong-ke-trang-dat-form-dang-ky
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-optinform#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. KPI phòng ban là gì?
+Half last line: - KPI phòng ban thường sẽ ph
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-1.-kpi-phong-ban-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Thống kê doanh số
+Half last line: - Đã mua: Với điều kiện lọc “đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-7.-thong-ke-doanh-so
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Video hướng dẫn
+Half last line: 8. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-8.-video-huong-dan
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI phòng ban
+Half last line: - Xem tất cả: x
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-2.-phan-quyen-kpi-phong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan phòng ban
+Half last line: 3. Tổ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-3.-tong-quan-phong-ban
+Number of records updated: 4
+
+=== Updating Text ===
+Second line: 3. Tổng quan phòng ban
+Half last line: Biểu đồ biến động Doanh Số theo tháng: sẽ thống kê các 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-3.1.-bieu-do-bien-dong-doanh-so
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan phòng ban
+Half last line: Biểu đồ so sán
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-3.2.-so-sanh-doanh-so
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan phòng ban
+Half last line: Bạn có thể click vào số 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-3.3.-bang-ty-le-chuyen-doi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Thống kê tổng hợp
+Half last line: Sản phẩm bán ra trong kỳ: Thống k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-4.-thong-ke-tong-hop
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Chu kỳ khách hàng
+Half last line: Bạn có thể click vào 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-5.-chu-ky-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Thống kê hành trình khách hàng
+Half last line: (5) Doa
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-phong-ban#id-6.-thong-ke-hanh-trinh-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. KPI sản phẩm là gì?
+Half last line: KPI Sản phẩm là bản báo cáo thống kê chi tiết về hiệu quả hoạt động của các sản phẩm, nhóm
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-1.-kpi-san-pham-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI sản phẩm
+Half last line: - Xem tất cả: x
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-2.-phan-quyen-kpi-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: (4) Lựa chọn thờ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.-tong-quan-kpi-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: Doanh thu = (Doanh
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.1.-doanh-thu-doanh-so-san-pham
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: Từ biểu đồ này doanh nghiệp sẽ biết được những sản phẩm, dịch vụ nào đang đem lạ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.2.-bieu-do-top-5-doanh-thu-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: Biểu đồ thể hiện biến động doanh thu của top 3 tỉnh/thành 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.3.-bieu-do-bien-dong-doanh-thu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: Bạn cũng có thể click vào sản phẩm đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.4.-bang-san-pham-ban-trong-ky
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan KPI sản phẩm
+Half last line: Để có thể thống kê được danh sá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-3.5.-bang-san-pham-tra-trong-ky
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-san-pham#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Báo cáo telesale là gì?
+Half last line: Báo cáo Telesales là bản báo cáo thống kê chi tiết về hoạt động chăm sóc khách hàng qua điện thoại (
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-telesales#id-1.-bao-cao-telesale-la-gi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền báo cáo telesale
+Half last line: - Xem tất cả: xem được báo cáo telesa
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-telesales#id-2.-phan-quyen-bao-cao-telesale
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tổng quan báo cáo telesale
+Half last line: (9) Bảng t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-telesales#id-3.-tong-quan-bao-cao-telesale
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Chi tiết báo cáo telesale
+Half last line: - Chưa có đơn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-telesales#id-4.-chi-tiet-bao-cao-telesale
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/bao-cao/bao-cao-telesales#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của chiến dịch
+Half last line: - Chăm sóc tự động, 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-1.-loi-ich-cua-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền chiến dịch
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-2.-phan-quyen-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa chiến dịch
+Half last line: Sau khi hoàn thành các 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-3.1.-tao-moi-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa chiến dịch
+Half last line: (13) Thêm cơ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-3.2.-chi-tiet-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa chiến dịch
+Half last line: Bạn click vào màn hìn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-3.3.-sua-chien-dich
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa chiến dịch
+Half last line: Bạn click vào màn hìn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-3.4.-xoa-chien-dich
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý chiến dịch
+Half last line: (9) Thao t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-4.-quan-ly-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/chien-dich#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Phân quyền cơ hội
+Half last line: Để tạo và quản lý cơ h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-1.-phan-quyen-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa cơ hội
+Half last line: Sau khi đã cài đặt xong các thông tin cơ bả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-2.-huong-dan-them-moi-sua-xoa-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa cơ hội
+Half last line: -> Click Thêm 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-2.1.-them-co-hoi-tu-man-hinh-chien-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa cơ hội
+Half last line: - Người quản lý chiến dịch hoặc n
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-2.2.-them-co-hoi-tu-man-hinh-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa cơ hội
+Half last line: Hoặc chuyển nhanh bằng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-2.3.-cap-nhat-trang-thai-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thêm mới, sửa, xóa cơ hội
+Half last line: (8) Công việc liên qua
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-2.4.-chi-tiet-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/co-hoi#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: 1. Lợi ích của email marketing
+Half last line: - Tiết kiệm 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-1.-loi-ich-cua-email-marketing
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền email marketing
+Half last line: - Xem tất c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-2.-phan-quyen-email-marketing
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi email
+Half last line: Sau khi tạo tem
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-3.1.-tao-mau-email
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi email
+Half last line: - Sử dụng chữ ký email
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-3.2.-gui-email
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi email
+Half last line: Truy cập vào Marketi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-3.3.-chinh-sua-mau-email
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi email
+Half last line: Truy cập vào Marke
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-3.4.-xoa-mau-email
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 4. Quản lý email
+Half last line: (9) Lọc theo trạng t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-4.-quan-ly-email
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/email-marketing#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của Landingpage
+Half last line: - Tự động 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-1.-loi-ich-cua-landingpage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền Landingpage
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-2.-phan-quyen-landingpage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa landingpage
+Half last line: (5) Công
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-3.1.-tao-moi-landingpage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa landingpage
+Half last line: Bạn click vào màn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-3.2.-chinh-sua-landingpage
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa landingpage
+Half last line: Bạn click vào màn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-3.3.-xoa-landingpage
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý Landingpage
+Half last line: (4) Trạng thái Bật/tắt Landing page:  để cho phép hiển thị li
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-4.-quan-ly-landingpage
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/landingpage#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của Marketing Automation
+Half last line: - Hỗ tr
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-1.-loi-ich-cua-marketing-automation
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Các kịch bản automation thường gặp
+Half last line: Mô tả: tới ngày sinh nhật 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-5.4.-chuc-mung-sinh-nhat-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Video hướng dẫn
+Half last line: 6. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-6.-video-huong-dan
+Number of records updated: 5
+
+=== Updating Text ===
+Second line: 2. Phân quyền automation
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-2.-phan-quyen-automation
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo, sửa, xóa automation
+Half last line: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-3.1.-cach-thuc-hoat-dong-cua-automation
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo, sửa, xóa automation
+Half last line: Bước 6: N
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-3.2.-tao-moi-automation
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo, sửa, xóa automation
+Half last line: Bạn click vào mà
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-3.3.-chinh-sua-automation
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo, sửa, xóa automation
+Half last line: Bạn click vào màn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-3.4.-xoa-automation
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 5. Các kịch bản automation thường gặp
+Half last line: Bạn cần đăng kí dịch vụ Emai
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-5.1.-cham-soc-khach-hang-dang-ky-tu-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Các kịch bản automation thường gặp
+Half last line: Mô tả: Khi tạo công việc hẹn gặp
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-5.2.-nhac-lich-hen-cho-nhan-vien-va-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Các kịch bản automation thường gặp
+Half last line: \=> Mục tiêu: tạo cảm giác cho người mua hàn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/marketing-automation#id-5.3.-cham-soc-khach-hang-sau-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích của Optin form
+Half last line: - Dễ dàng sử dụng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-1.-loi-ich-cua-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền Optin form
+Half last line: Để tạo và quản lý Optin 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-2.-phan-quyen-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa Optin form
+Half last line: Khi đó hệ thống sẽ tự động sinh ra 1 mã nhúng 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-3.1.-tao-moi-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa Optin form
+Half last line: Bạn click vào mà
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-3.2.-chinh-sua-optin-form
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa Optin form
+Half last line: Bạn click vào mà
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-3.3.-xoa-optin-form
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý Optin form
+Half last line: (5) Lựa ch
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-4.-quan-ly-optin-form
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/optin-form#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của SMS Marketing
+Half last line: - Kết hợp cô
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-1.-loi-ich-cua-sms-marketing
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền SMS Marketing
+Half last line: - Xem tất 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-2.-phan-quyen-sms-marketing
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi sms
+Half last line: (3) Danh sách biến Getfly cung cấp
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-3.1.-tao-mau-sms
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi sms
+Half last line: > 20
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-3.2.-gui-sms
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi sms
+Half last line: Truy cập vào Market
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-3.3.-chinh-sua-mau-sms
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo và gửi sms
+Half last line: Truy cập vào Mark
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-3.4.-xoa-mau-sms
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 4. Quản lý sms
+Half last line: (4) Tìm kiếm sms: tìm theo nộ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-4.-quan-ly-sms
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/cong-cu-marketing/sms-marketing#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của KPI G version
+Half last line: - Việc áp dụng bộ KPI theo level và chức dan
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-1.-loi-ich-cua-kpi-g-version
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền KPI
+Half last line: Lưu ý: Tài khoả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-2.-phan-quyen-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tạo mới KPI
+Half last line: - Có thể cài đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-3.1.-tao-moi-chuc-danh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tạo mới KPI
+Half last line: Sau khi kiểm thử nếu
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-3.2.-tao-moi-phieu-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tạo mới KPI
+Half last line: - Cập nhật gi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-3.3.-chi-tiet-phieu-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tạo mới KPI
+Half last line: - Ngoài ra có nút xem Level tiếp the
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-3.4.-quan-ly-phieu-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Điểm nổi bật của KPI G version
+Half last line: - Mỗi cá nhân sẽ chỉ đượ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-4.-diem-noi-bat-cua-kpi-g-version
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi-g-version#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Thiết lập giao chỉ tiêu KPI
+Half last line: Để thiết lập và giao c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#id-1.-thiet-lap-giao-chi-tieu-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cập nhật kết quả KPI
+Half last line: Sau khi hoàn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-4-luu-ket-qua
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chốt KPI
+Half last line: - Phiếu giao chỉ tiêu đến hết ngày cuối cùng của tháng sẽ tự động
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#id-3.-chot-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Báo cáo KPI
+Half last line: (5) Danh sách chỉ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#id-4.-bao-cao-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Lưu ý
+Half last line: - Phiếu giao chỉ tiêu đến hết ngày cuối cùng của tháng hệ thống sẽ t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#id-5.-luu-y
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Thiết lập giao chỉ tiêu KPI
+Half last line: - Thêm chỉ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-1-chon-chi-tieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Thiết lập giao chỉ tiêu KPI
+Half last line: (4) Trạng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-2-setup-gia-tri
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Thiết lập giao chỉ tiêu KPI
+Half last line: (4) Danh sác
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-3-kiem-thu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Thiết lập giao chỉ tiêu KPI
+Half last line: Sau khi điền xo
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-4-ban-hanh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cập nhật kết quả KPI
+Half last line: Đối với các chỉ tiêu tự nhập (chỉ tiêu hệ thống kh
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#id-2.-cap-nhat-ket-qua-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cập nhật kết quả KPI
+Half last line: Trong danh 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-1-chon-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cập nhật kết quả KPI
+Half last line: Lựa chọn nhân
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-2-chon-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Cập nhật kết quả KPI
+Half last line: Với chỉ tiêu tự
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/giao-chi-tieu-kpi#buoc-3-cap-nhat-ket-qua-thuc-te
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng KPI
+Half last line: - [x] Đưa ra các chỉ số KPI góp phầ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi#id-1.-loi-ich-khi-su-dung-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi#id-2.-phan-quyen
+Number of records updated: 22
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng KPI
+Half last line: - Đưa ra các chỉ số KPI góp phần l
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/tong-quan-chung#id-1.-loi-ich-khi-su-dung-kpi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/kpi/tong-quan-chung#id-2.-phan-quyen
+Number of records updated: 22
+
+=== Updating Text ===
+Second line: 1. Lợi ích của quản lý báo giá
+Half last line: - Dễ dàng in ấn,
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-1.-loi-ich-cua-quan-ly-bao-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền báo giá
+Half last line: - Xem tất cả:
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-2.-phan-quyen-bao-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt báo giá
+Half last line: (5) Thông tin 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-3.1.-tao-moi-bao-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt báo giá
+Half last line: Bạn click vào chi t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-3.2.-sua-bao-gia
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt báo giá
+Half last line: Sau khi đã check lại toàn bộ thông t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-3.3.-duyet-bao-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt báo giá
+Half last line: Bạn click vào chi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-3.4.-xoa-bao-gia
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý báo giá
+Half last line: - Tìm kiếm theo tên 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-4.-quan-ly-bao-gia
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-bao-gia#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích quản lý đơn hàng bán
+Half last line: - Tiết kiệm thời gia
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-1.-loi-ich-quan-ly-don-hang-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 2. Phân quyền đơn hàng bán
+Half last line: - Download DH bá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-2.-phan-quyen-don-hang-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: (5) Thêm mới để
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.1.-tao-moi-don-hang-trong-chi-tiet-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: - Bạn click
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.2.-tao-moi-don-hang-trong-muc-ban-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: Bạn click vào chi t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.3.-sua-don-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: Bên cạnh đó, phần B
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.4.-duyet-don-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: Đơn hàng đã Hủy sẽ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.5.-huy-don-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa đơn hàng
+Half last line: - K
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-3.6.-tuy-chinh-hien-thi-truong-du-lieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Quản lý đơn hàng
+Half last line: - Còn lại:
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-don-hang#id-4.-quan-ly-don-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích của quản lý hợp đồng
+Half last line: - Theo dõi và n
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-1.-loi-ich-cua-quan-ly-hop-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền hợp đồng
+Half last line: - Xem tất cả: X
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-2.-phan-quyen-hop-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt hợp đồng
+Half last line: Điền thông tin xon
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-3.1.-tao-hop-dong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt hợp đồng
+Half last line: Bạn click vào chi ti
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-3.2.-sua-hop-dong
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt hợp đồng
+Half last line: Sau khi đã check lại toàn bộ thông t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-3.3.-duyet-hop-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa, duyệt hợp đồng
+Half last line: Bạn click vào chi 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-3.4.-huy-hop-dong
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý hợp đồng bán
+Half last line: Việc quản lý hợp đồng trên Getfly sẽ giúp bạn dễ dàng theo dõi hợp đồng 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-4.-quan-ly-hop-dong-ban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-hop-dong#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của quản lý sản phẩm
+Half last line: - Cung cấp các báo cáo thống kê cụ thể dựa trê
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-1.-loi-ich-cua-quan-ly-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền sản phẩm
+Half last line: - Download sản p
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-2.-phan-quyen-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa sản phẩm
+Half last line: (4) Đính kè
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-3.1.-tao-moi-tung-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa sản phẩm
+Half last line: (3) Click T
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-3.2.-tao-moi-nhieu-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa sản phẩm
+Half last line: Bạn click vào màn hì
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-3.3.-sua-san-pham
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa sản phẩm
+Half last line: Sản phẩm đã xóa sẽ hiển thị ở 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-3.4.-xoa-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Quản lý sản phẩm
+Half last line: (3) Hiển thị số sản
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-4.-quan-ly-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Video hướng dẫn
+Half last line: 5. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-ban-hang/quan-ly-san-pham#id-5.-video-huong-dan
+Number of records updated: 15
+
+=== Updating Text ===
+Second line: 1. Lợi ích của quản lý công việc
+Half last line: - Nâng cao chất lượng dịch vụ khách hàng: Getfly CRM giú
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-1.-loi-ich-cua-quan-ly-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Quản lý công việc
+Half last line: Truy cập vào Công việc -> Dự án -> Lịch, m
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-4.3.-quan-ly-cong-viec-theo-dang-lich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thống kê công việc
+Half last line: Để xem thông kê công việc 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-5.1.-phan-quyen-thong-ke-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thống kê công việc
+Half last line: (9) Hủy
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-5.2.-thong-ke-theo-trang-thai-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thống kê công việc
+Half last line: Cách tính trung bình công việc dự kiến/ h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-5.3.-thong-ke-theo-khoi-luong-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Vieo hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-6.-vieo-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-2.-phan-quyen
+Number of records updated: 22
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa công việc
+Half last line: Sau khi nhập đầy đủ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-3.1.-tao-moi-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa công việc
+Half last line: Bạn có thể để lại ý kiến hoặc phản hồi, góp
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-3.2.-xem-chi-tiet-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa công việc
+Half last line: - Cấp t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-3.3.-chinh-sua-cong-viec
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa công việc
+Half last line: - Cấp t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-3.4.-huy-cong-viec
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Hướng dẫn tạo mới, sửa, xóa công việc
+Half last line: - Người c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-3.5.-xoa-cong-viec
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 4. Quản lý công việc
+Half last line: (5) Báo 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-4.1.-quan-ly-timeline-cong-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Quản lý công việc
+Half last line: Hệ thống hiện thị 3 trạng thái m
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-cong-viec#id-4.2.-quan-ly-cong-viec-theo-dangkanban
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Dự án là một thư mục chứa các công việc con khác nhau. Bạn có thể tạo dự án cho các phòng ban hoặc tạo các đầu việc lớn cho chính mình để dễ dàng quản lý và theo dõi.
+Half last line: VD: Kế hoạch phòng k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Phân quyền dự án
+Half last line: Để tạo và quản lý automat
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-1.-phan-quyen-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tạo dự án
+Half last line: Sau khi hoàn thành c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-2.-tao-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Sắp xếp dự án
+Half last line: Giao diện Dashboard 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-3.-sap-xep-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Chỉnh sửa dự án
+Half last line: - Người phụ tr
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-4.-chinh-sua-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Xóa dự án
+Half last line: - Nếu xóa dự án, t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-5.-xoa-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Quản lý dự án
+Half last line: (4) Lịch: hiển 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-6.-quan-ly-du-an
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-cong-viec/quan-ly-du-an#id-7.-video-huong-dan
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Phân quyền
+Half last line: - Xem tất cả: Cho phé
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-1.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Thêm mới khách hàng
+Half last line: Vid
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-2.1.-them-moi-tung-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Thêm mới khách hàng
+Half last line: Vid
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-2.2.-upload-danh-sach-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 3. Xem chi tiết khách hàng
+Half last line: Vid
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-3.-xem-chi-tiet-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các thao tác khác
+Half last line: 4. Nh
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-4.1.-chinh-sua-thong-tin-khach-hang
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 4. Các thao tác khác
+Half last line: - Khi xóa khách hàng, tất cả dữ liệu l
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-4.2.-xoa-thong-tin-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Các thao tác khác
+Half last line: - Các trường dữ liệu không hỗ t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-4.3.-gop-thong-tin-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Phân loại khách hàng
+Half last line: - Việc phân loại khách 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tao-va-quan-ly-khach-hang#id-5.-phan-loai-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Getfly CRM giúp bạn lưu trữ tất cả lịch sử tương tác với khách hàng bao gồm: trao đổi, cuộc gọi, email, sms,..giúp bạn dễ dàng xem lại lịch sử tương tác để nắm bắt thông tin và tiếp tục theo dõi KH.
+Half last line: Getfly CRM giúp bạn lưu trữ tất cả lịch sử tương 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 9. Giới thiệu
+Half last line: Trong tab Giới thiệu thể hiện danh sách Khách 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-9.-gioi-thieu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lịch sử trao đổi
+Half last line: - Ghi chép đầ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-1.-lich-su-trao-doi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Tương tác phối hợp nội bộ (tag tên, #key)
+Half last line: - Giới hạn dung lượng một
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-2.-tuong-tac-phoi-hop-noi-bo-tag-ten-key
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thêm người xem
+Half last line: - Bạn cần có quyền
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-3.-them-nguoi-xem
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Khách hàng phản hồi
+Half last line: Phần Khách hàng phản hồi trên Getfly CRM gi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-4.-khach-hang-phan-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Giao dịch
+Half last line: - Báo giá: Thêm báo 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-5.-giao-dich
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Lịch hẹn
+Half last line: - Tìm kiếm t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-6.-lich-hen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Cơ hội
+Half last line: Ngoài ra nếu bạn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-7.-co-hoi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Automation
+Half last line: - Thay đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/theo-doi-lich-su-tuong-tac#id-8.-automation
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Giới thiệu về module quản lý khách hàng
+Half last line: - Quản lý phản hồi của khách h
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tong-quan-ve-module-quan-ly-khach-hang#id-1.-gioi-thieu-ve-module-quan-ly-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Lợi ích của module quản lý khách hàng
+Half last line: - Tăng doanh số: Module quản lý khách hàng của Getfly CRM giúp doanh nghiệp 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-co-ban/quan-ly-khach-hang/tong-quan-ve-module-quan-ly-khach-hang#id-2.-loi-ich-cua-module-quan-ly-khach-hang
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng Tổng đài
+Half last line: - Tổng hợp báo cáo chi tiết: Hệ thống cung cấp báo cáo ch
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-1.-loi-ich-khi-su-dung-tong-dai
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Báo cáo tổng đài
+Half last line: Danh sách cuộc gọi hiển thị sẽ liên quan đến phân quyền trên hệ thống. Được
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-7.1.-bao-cao-tong-dai
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Báo cáo tổng đài
+Half last line: Bảng tỷ lệ chuyển đổi ta
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-7.2.-bao-cao-kpi-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Báo cáo tổng đài
+Half last line: Tại đây bạn có thể theo dõi được tỉ lệ chuyển đổi của một nhân viên phụ trách khách hàng, hoặc phụ trách
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-7.3.-bao-cao-telesales
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Video hướng dẫn
+Half last line: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-8.-video-huong-dan
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Download ca
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-2.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Tích hợp đối tác tổng đài
+Half last line: Hướng dẫn t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-3.-tich-hop-doi-tac-tong-dai
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Cài đặt máy lẻ cho người dùng
+Half last line: Nhập thông tin Máy lẻ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-4.-cai-dat-may-le-cho-nguoi-dung
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thao tác nghe và gọi trên Getfly CRM
+Half last line: Để gọi điện thoại cho
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-5.-thao-tac-nghe-va-goi-tren-getfly-crm
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Thao tác nghe và gọi trên Getfly CRM
+Half last line: Tìm kiếm số điện thoại của khách hàng
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-5.1.-goi-o-man-hinh-quick-view
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 5. Thao tác nghe và gọi trên Getfly CRM
+Half last line: Tìm kiếm số điện thoại của khách hàn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-5.2.-goi-o-chi-tiet-khach-hang
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 5. Thao tác nghe và gọi trên Getfly CRM
+Half last line: Trường hợp số gọi đến là số máy lạ (thông
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-5.3.-tiep-nhan-cuoc-goi-den
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Lịch sử cuộc gọi
+Half last line: - Nhân viên có quyền Truy cập callcenter chỉ có thể 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tong-dai#id-6.-lich-su-cuoc-goi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Báo cáo tồn kho
+Half last line: Khi bạn thấy có sự chênh lệch giữa tồn khả dụng và tồn thực tế của một sản phẩ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/bao-cao-ton-kho-va-bang-xuat-nhap-ton#id-1.-bao-cao-ton-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Thẻ kho
+Half last line: Bạn có thể xem chi tiết lịch sử n
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/bao-cao-ton-kho-va-bang-xuat-nhap-ton#id-2.-the-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Báo cáo xuất nhập tồn
+Half last line: - Công thức tính lợi nhuận đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết k
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/bao-cao-ton-kho-va-bang-xuat-nhap-ton#id-3.-bao-cao-xuat-nhap-ton
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/bao-cao-ton-kho-va-bang-xuat-nhap-ton#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Nhập kho
+Half last line: - Trường hợp sản phẩm tro
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-1.1.-nhap-ton-dau-ky-bang-cach-kiem-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: Phiếu chuyển kho giúp bạn the
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: Giá xuất kho của 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.1.-tao-phieu-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: - Bước 2: Đối với Kho đến Ngườ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.2.-quy-trinh-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: - In: in phi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.3.-cac-tac-vu-khac
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: (3) Dan
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.4.-quan-ly-phieu-chuyen-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Chuyển kho
+Half last line: 3.5. 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-3.5.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Nhập kho
+Half last line: Bạn chọn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-1.2.-nhap-kho-theo-don-hang-mua
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Nhập kho
+Half last line: Bạn chọn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-1.3.-nhap-kho-theo-san-pham
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Nhập kho
+Half last line: Hướng dẫn c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-1.4.-quy-trinh-nhap-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Nhập kho
+Half last line: 1.5. 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-1.5.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Xuất kho
+Half last line: Bạn chọ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-2.1.-xuat-kho-theo-don-hang-ban
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Xuất kho
+Half last line: Bạn chọ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-2.2.-xuat-kho-theo-san-pham
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 2. Xuất kho
+Half last line: Hướng dẫn c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-2.3.-quy-trinh-xuat-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Xuất kho
+Half last line: 2.4. 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/huong-dan-nhap-kho-xuat-kho-va-chuyen-kho#id-2.4.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng module Kho
+Half last line: - Giúp cho kinh doan
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho#id-1.-loi-ich-khi-su-dung-module-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: Để phân quyền cho phép người dùng sử dụng tí
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho#id-2.-phan-quyen
+Number of records updated: 4
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: 1. Tạo mới, chỉnh sửa và xóa kho
+Half last line: Sau khi ho
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-1.1.-tao-moi-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Tạo mới, chỉnh sửa và xóa kho
+Half last line: Bạn truy cập Kho -> chọn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-1.2.-chinh-sua-kho
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Tạo mới, chỉnh sửa và xóa kho
+Half last line: - Kho sau khi xoá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-1.3.-xoa-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Thiết lập quy trình kho
+Half last line: - Tắt: không sử dụng qu
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-2.1.-bat-tat-quy-trinh-duyet-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Thiết lập quy trình kho
+Half last line: Sau khi hoàn tất 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-2.2.-thiet-lap-quy-trinh-xuat-kho-nhap-kho-va-kiem-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Quản lý kho
+Half last line: (3) Danh sách toàn b
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-3.-quan-ly-kho
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/kho/tao-va-quan-ly-kho#id-4.-video-huong-dan
+Number of records updated: 14
+
+=== Updating Text ===
+Second line: 1. Định nghĩa phiếu yêu cầu
+Half last line: - Người duyệt 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-1.-dinh-nghia-phieu-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tạo phiếu yêu cầu
+Half last line: -  Có thể tạo nhiều 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-4.3.-duyet-phieu-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quy trình yêu cầu
+Half last line: Thao tác: Cài đặt → C
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-2.1.-cai-dat-chung
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 2. Quy trình yêu cầu
+Half last line: - Tính lại 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-2.2.-ngay-nghi-cua-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quy trình yêu cầu
+Half last line: Hệ thống có L
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-2.3.-loai-nghi-phep
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quy trình yêu cầu
+Half last line: Thao tác: Cài đặt → Cấu hìn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-2.4.-cach-cai-dat-so-luong-ngay-phep-ngay-phep-so-lan-di-muon-ve-som
+Number of records updated: 3
+
+=== Updating Text ===
+Second line: 3. Các thiết lập quy trình phiếu yêu cầu
+Half last line: - Xem tất cả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-2.1.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Các thiết lập quy trình phiếu yêu cầu
+Half last line: - Khôi phục: Tài khoản phải có 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-3.2.-them-moi-quy-trinh-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tạo phiếu yêu cầu
+Half last line: -  Xóa:
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-4.1.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Tạo phiếu yêu cầu
+Half last line: - Tình trạng của phi
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/phieu-yeu-cau#id-4.2.-tao-phieu-yeu-cau
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng module HRM
+Half last line: - Thiết lập thuế và bảo
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm#id-1.-loi-ich-khi-su-dung-module-hrm
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: Để có thể cài đặt được các dữ liệu cơ bản về module HRM, bạn phải c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm#id-2.-phan-quyen
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Tạo hồ sơ nhân sự
+Half last line: Màn hình 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/tao-va-quan-ly-ho-so-nhan-su#id-1.-tao-ho-so-nhan-su
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Tạo hồ sơ nhân sự
+Half last line: - Thông tin li
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/tao-va-quan-ly-ho-so-nhan-su#id-1.1.-thong-tin
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Tạo hồ sơ nhân sự
+Half last line: Click Thêm
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/tao-va-quan-ly-ho-so-nhan-su#id-1.2.-hop-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Để cài đặt HRM, bạn truy cập vào Cài đặt -> chọn Cấu hình hệ thống -> chi tiết
+Half last line: Để cài đặt HRM, bạn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 5. Tỷ lệ hoa hồng
+Half last line: Cài đặt % hoa hồng được thưởng c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-5.-ty-le-hoa-hong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 6. Phần trăm lương P3
+Half last line: Cài đặt thưởng cho từng p
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-6.-phan-tram-luong-p3
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 7. Gia đinh
+Half last line: Tình trạng hôn nhân: cà
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-7.-gia-dinh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 8. Dân tộc
+Half last line: Cài đặt thô
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-8.-dan-toc
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 9. Tôn giáo
+Half last line: Cài đặt thông tin
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-9.-ton-giao
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 10. Nhân viên
+Half last line: Ngân hàng: cài đặt thông tin
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-10.-nhan-vien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 11. Chấm công - tiền lương
+Half last line: - Chấm công theo IP sẽ khô
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-11.1.-thiet-lap-cham-cong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 11. Chấm công - tiền lương
+Half last line: Để nhân viên chấm côn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-11.2.-thiet-lap-ca-lam-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 11. Chấm công - tiền lương
+Half last line: Để hoàn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-11.3.-thiet-lap-ngay-nghi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 12. Giảm trừ người phụ thuộc
+Half last line: Cài đặt định mức số tiền giảm trừ người 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-12.-giam-tru-nguoi-phu-thuoc
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hợp đồng lao động
+Half last line: Cài đặt hợp đồng lao động bào
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-1.-hop-dong-lao-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 13. Giảm trừ gia cảnh
+Half last line: Cài đặt định mức s
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-13.-giam-tru-gia-canh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 14. Quỹ nội bộ
+Half last line: Mỗi công ty có thể có quy định riêng về
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-14.-quy-noi-bo
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 15. Phụ cấp
+Half last line: - Phụ cấ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-15.-phu-cap
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 16. Nghỉ phép
+Half last line: - Số buổi đi muộn/về sớ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-16.-nghi-phep
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 17. Mối quan hệ người phụ thuộc
+Half last line: 17. Mối
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-17.-moi-quan-he-nguoi-phu-thuoc
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hợp đồng lao động
+Half last line: Để thêm mới loại hợp đồn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-1.1.-loai-hop-dong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hợp đồng lao động
+Half last line: Để thêm mới thời gian hiệu lự
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-1.2.-thoi-gian-hieu-luc
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hợp đồng lao động
+Half last line: Để thêm mới hình thức làm v
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-1.3.-hinh-thuc-lam-viec
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Hợp đồng lao động
+Half last line: Bạn có thể cài đặt thời gian nâng bậc lư
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-1.4.-cai-dat-thoi-gian-bac-luong
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Chính sách
+Half last line: (5) Thuộc nhóm: các lựa c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-2.-chinh-sach
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Thuế TNCN
+Half last line: Để thêm mới bậc thuế TNCN -> chọ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-3.-thue-tncn
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Bảo hiểm
+Half last line: - BHY
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/quan-ly-nhan-su-hrm/thiet-lap-cai-dat-hrm#id-4.-bao-hiem
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: Báo cáo tài chính (BCTC) đóng vai trò quan trọng trong việc đánh giá tình hình tài chính, hiệu quả hoạt động kinh doanh và khả năng thanh toán của doanh nghiệp. Getfly CRM cung cấp hệ thống báo cáo tài chính toàn diện, tuân thủ theo mẫu của Tổng cục Thuế và các quy định hiện hành như Thông tư T133 và Thông tư T200.
+Half last line: Để truy cập vào báo cá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Hướng dẫn thiết lập chỉ tiêu ở báo cáo
+Half last line: (3) Chỉnh sửa tiêu chí: 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-2.-huong-dan-thiet-lap-chi-tieu-o-bao-cao
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: Bảng cân đối tài khoản hay còn được gọi là bảng cân đối phát sinh được lập ra với mục đích kiểm tra và đối chiếu lại những dữ liệu được ghi trong sổ 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.1.-bang-can-doi-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: VIII
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.2.-bao-cao-tai-chinh-b01a
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: V. Đầu
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.3.-bao-cao-tai-chinh-b01b
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: Bảng cân đối kế toán là một bộ phận của báo cáo tài chính. Bảng 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.4.-bang-can-doi-ke-toan-b01-dn
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: - Người đọc báo cáo hoạt động kinh doanh dễ dàng nắm được
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.5.-bang-bao-cao-ket-qua-hoat-dong-kinh-doanh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: Báo cáo kết quả hoạt động kinh doanh mẫu B02- DNN là một trong những thành phần của Báo cáo tài chính của d
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.6.-bang-bao-cao-ket-qua-hoat-dong-kinh-doanh-b02-dn
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: Báo cáo lưu chuyển tiền tệ còn được biết đến với tên gọi khác là báo cáo dòng tiền mặt.
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.7.-luu-chuyen-tien-te-b03-dn
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Các mẫu báo cáo theo thông tư T133
+Half last line: Hướng dẫn
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/bao-cao-tai-chinh#id-1.8.-bao-cao-tu-thiet-lap
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: Getfly cung cấp tính năng Quản lý ngân sách hỗ trợ doanh nghiệp tối ưu hóa việc th
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.-quan-ly-ngan-sach
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: (4) Thống 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.2.-chi-tiet-quy
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: Người tạo quỹ/người quản l
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.3.-chinh-sua-quy
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: Với trường hợp những quỹ đã phá
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.4.-xoa-quy
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: 2.5. 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.5.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: Sau khi điền đầy đ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.1.-tao-ngan-sach
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: - Khi tạo ngân sách số tiền trong các d
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.2.-tao-danh-muc-trong-ngan-sach
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: Bạn truy cập module Tài chính -> 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.3.-chinh-sua-ngan-sach
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: Bạn truy cập module Tài chính ->
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.4.-xoa-ngan-sach
+Number of records updated: 2
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: - Tải báo cáo: Cho
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.5.-thong-ke-ngan-sach
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Quản lý Ngân sách
+Half last line: 1.6. 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-1.6.-video-huong-dan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: Quỹ trong doanh nghiệp là tập hợp toàn bộ các khoả
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.-quan-ly-quy
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Quản lý Quỹ
+Half last line: Sau khi hoàn 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/quan-ly-ngan-sach-va-quy#id-2.1.-tao-quy
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 1. Cách thiết lập hệ thống tài khoản
+Half last line: - Lưỡng tính: Là tài khoản có thể có số dư bên N
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/thiet-lap-he-thong-dinh-khoan#id-1.-cach-thiet-lap-he-thong-tai-khoan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2.  Thiết lập báo cáo tài chính
+Half last line: Nhập tên báo c
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/thiet-lap-he-thong-dinh-khoan#id-2.-thiet-lap-bao-cao-tai-chinh
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Video hướng dẫn
+Half last line: 3. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/thiet-lap-he-thong-dinh-khoan#id-3.-video-huong-dan
+Number of records updated: 9
+
+=== Updating Text ===
+Second line: 1. Lợi ích khi sử dụng module Tài chính kế toán
+Half last line: - Đảm bảo đư
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-1.-loi-ich-khi-su-dung-module-tai-chinh-ke-toan
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 2. Phân quyền
+Half last line: - Xem tất cả: Xem 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-2.-phan-quyen
+Number of records updated: 10
+
+=== Updating Text ===
+Second line: 3. Giới thiệu trang chủ
+Half last line: Màn hình trang chủ Getfly giúp doanh nghiệp theo dõ
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-3.-gioi-thieu-trang-chu
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Giới thiệu trang chủ
+Half last line: Tại biểu đồ dòng t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-3.1.-bieu-do-dong-tien
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Giới thiệu trang chủ
+Half last line: Biểu đồ sẽ hiển thị phần tră
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-3.2.-bieu-do-can-can-thu-chi
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Giới thiệu trang chủ
+Half last line: Nhìn vào biểu đồ này bạn nắm được sản phẩn nào bên mình 
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-3.3.-bieu-do-co-cau-doanh-thu-theo-san-pham
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 3. Giới thiệu trang chủ
+Half last line: Tiếp đến phần công nợ, t
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-3.4.-hoat-dong-gan-nhat
+Number of records updated: 1
+
+=== Updating Text ===
+Second line: 4. Video hướng dẫn
+Half last line: 4. V
+New URL (child_link): https://helpdesk6.getfly.vn/phien-ban-web/tinh-nang-mo-rong/tai-chinh-ke-toan/tong-quan-tai-chinh-ke-toan#id-4.-video-huong-dan
+Number of records updated: 14

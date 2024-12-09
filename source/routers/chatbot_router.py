@@ -1,20 +1,20 @@
-from fastapi import APIRouter, Request, Form
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
 from schemas.api_response_schema import ChatLogicInputData, ChatMessageRole, ChatMessage, make_response
 from source.services.chatbot.chatbot_ai import AI_Chatbot_Service
 from utils.log_utils import get_logger
 from .database import SessionLocal, User, Thread, ChatHistory  # Import từ file database.py
-import requests
-import os
+from datetime import datetime
 import json
+import os
+import subprocess
+
+THUMBNAIL_DIR = "static/thumbnails"
+os.makedirs(THUMBNAIL_DIR, exist_ok=True)
 
 logger = get_logger(__name__)
 chat_router = APIRouter()
 
-AI_CHATBOT_URL = os.getenv("AI_CHATBOT_URL", "http://127.0.0.1:6379")
-top_k = 11
-
-# Answer endpoint
 
 ai_chatbot = AI_Chatbot_Service()
 
@@ -32,21 +32,16 @@ async def create_answer_eng(user_data: ChatLogicInputData):
         if not user_data.content:
             logger.info("Empty Question")
             return make_response(-502, content="Empty content", summary_history="None")
-        print(user_data)
         status_code, chatbot_answer, summary_history = await ai_chatbot.create_response(user_data)
 
         final_answer = make_response(status_code, content=chatbot_answer, summary_history=summary_history)
-        logger.info(f"Final answer: {final_answer}")
+        # logger.info(f"Final answer: {final_answer}")
 
     except Exception as e:
         chatbot_answer = f"Error in logic function: {e}"
         final_answer = make_response(-503, content=chatbot_answer, summary_history=summary_history)
     return final_answer
 
-@chat_router.post("/summary")
-async def summary_histories(user_data: ChatLogicInputData):
-    summary_history = await ai_chatbot.create_summary(user_data)
-    return summary_history
 
 @chat_router.post("/threads")
 def post_thread(request: dict):
@@ -60,6 +55,7 @@ def post_thread(request: dict):
         if existing_user:
             logger.info(f"user_id {user_data['id']} đã tồn tại, không cần thêm mới.")
             user_id = existing_user.user_id  # Sử dụng user_id từ bảng users
+            user_name = existing_user.display_name
         else:
             # Nếu chưa tồn tại thì thêm mới
             user = User(user_id=user_data['id'], display_name=user_data['display_name'])
@@ -68,7 +64,7 @@ def post_thread(request: dict):
             db.refresh(user)
             logger.info(f"user_id {user_data['id']} đã được thêm vào cơ sở dữ liệu.")
             user_id = user.user_id  # Sử dụng user_id từ bảng users
-
+            user_name = user.display_name
         # Tạo một bản ghi thread mới với đúng user_id từ bảng users
         new_thread = Thread(user_id=user_id)
         db.add(new_thread)
@@ -76,11 +72,11 @@ def post_thread(request: dict):
         db.refresh(new_thread)
         
         logger.info(f"Thread được tạo với thread_id: {new_thread.thread_id}")
+        
     
-    print(request)
     
     # Thêm tin nhắn từ chatbot vào histories
-    assistant_message = ChatMessage(role=ChatMessageRole.ASSISTANT, content="Hello, may I help you?")
+    assistant_message = ChatMessage(role=ChatMessageRole.ASSISTANT, content="Chào bạn, tôi là Getfly Pro - một trợ lý ảo của Getfly. Tôi có thể giúp gì cho bạn?")
     histories.append(assistant_message)
     
     return {
@@ -93,69 +89,170 @@ def post_thread(request: dict):
     }
 
 
+def generate_thumbnail(video_url, output_path):
+    # Lấy frame tại giây thứ 1 của video
+    command = f'ffmpeg -i {video_url} -ss 00:00:01.000 -vframes 1 {output_path}'
+    subprocess.call(command, shell=True)
+
+
+
 @chat_router.post("/threads/{thread_id}/chat")
 async def post_thread_chat(thread_id: int, request: dict):
-    global conversation_history
+    async def generate_response():
+        global conversation_history
 
-    db = SessionLocal()
+        db = SessionLocal()
 
-    # Lấy thông tin user_id từ thread
-    thread = db.query(Thread).filter(Thread.thread_id == thread_id).first()
-    if not thread:
-        return {"error": "Thread not found"}
+        # Lấy thông tin user_id từ thread
+        thread = db.query(Thread).filter(Thread.thread_id == thread_id).first()
+        if not thread:
+            yield json.dumps({"data": {"error": "Thread not found"}}) + "\n"
+            return
 
-    user_id = thread.user_id  # Lấy user_id từ thread
+        user_id = thread.user_id  # Lấy user_id từ thread
+        user = db.query(User).filter(User.user_id == user_id).first()
+        user_name = user.display_name if user else ""  # Lấy display_name từ bảng User
 
-    # **Kiểm tra và khởi tạo lại lịch sử chat cho thread mới**
-    if thread_id not in conversation_history:
-        conversation_history[thread_id] = []
-        logger.info(f"Khởi tạo lịch sử chat cho thread_id {thread_id} với user_id {user_id}")
 
-        # Thêm tin nhắn chào hỏi vào cuộc hội thoại
-        welcome_message = ChatMessage(role=ChatMessageRole.ASSISTANT, content="Hello, may I help you?")
-        conversation_history[thread_id].append(welcome_message)
+        # Lấy summary từ DB nếu có
+        existing_history = db.query(ChatHistory).filter_by(thread_id=thread_id, user_id=user_id).first()
+        summary = existing_history.summary if existing_history else ""
 
-    # Thêm tin nhắn từ người dùng vào cuộc hội thoại
-    user_message = ChatMessage(role=ChatMessageRole.USER, content=request["content"])
-    conversation_history[thread_id].append(user_message)
 
-    # Tạo đối tượng ChatLogicInputData từ request và thread_id
-    chat_logic_input = ChatLogicInputData(
-        thread_id=str(thread_id),
-        content=request["content"],
-        histories=conversation_history[thread_id],
-        user_id=str(user_id)
+        # **Kiểm tra và khởi tạo lại lịch sử chat cho thread mới**
+        if thread_id not in conversation_history:
+            conversation_history[thread_id] = []
+            logger.info(f"Khởi tạo lịch sử chat cho thread_id {thread_id} với user_id {user_id}")
+
+            # Thêm tin nhắn chào hỏi vào cuộc hội thoại
+            welcome_message = ChatMessage(role=ChatMessageRole.ASSISTANT, content="Hello, may I help you?")
+            conversation_history[thread_id].append(welcome_message)
+
+        # Thêm tin nhắn từ người dùng vào cuộc hội thoại
+        user_message = ChatMessage(role=ChatMessageRole.USER, content=request["content"])
+        conversation_history[thread_id].append(user_message)
+
+        # Tạo đối tượng ChatLogicInputData từ request và thread_id
+        chat_logic_input = ChatLogicInputData(
+            thread_id=str(thread_id),
+            content=request["content"],
+            histories=conversation_history[thread_id],
+            user_id=str(user_id),
+            user_name=user_name,
+            summary=summary
+        )
+        
+
+
+
+        final_answer = await create_answer_eng(chat_logic_input)
+
+
+        responses = []
+
+        # Xử lý text response
+        for response in final_answer.data.content:
+            if response["type"] == "text":
+                # Cập nhật DB và conversation history
+                bot_message = ChatMessage(
+                    role=ChatMessageRole.ASSISTANT, 
+                    content=response["content"]
+                )
+                conversation_history[thread_id].append(bot_message)
+
+                if existing_history:
+                    existing_history.conversation += "\n" + "\n".join([f"{msg.role}: {msg.content}" for msg in conversation_history[thread_id]])
+                    existing_history.summary = final_answer.data.summary_history
+                    existing_history.display_name = user_name
+                    existing_history.created_at = datetime.now()
+                    db.commit()
+                else:
+                    conversation_text = "\n".join([f"{msg.role}: {msg.content}" for msg in conversation_history[thread_id]])
+                    db.add(ChatHistory(
+                        thread_id=thread_id,
+                        user_id=user_id,
+                        display_name=user_name,
+                        conversation=conversation_text,
+                        summary=final_answer.data.summary_history,
+                        created_at=datetime.now()
+                    ))
+                    db.commit()
+
+
+                responses.append({
+                    "reply_message": {
+                        "content": str(response["content"]),
+                        "metadata": [],
+                        "postback": "",
+                        "forward_to_cs": False
+                    }
+                })
+
+        # Xử lý images response
+        for response in final_answer.data.content:
+            if response["type"] == "images":
+                metadata = []
+                for idx, image_url in enumerate(response["content"], 1):
+                    metadata.append({
+                        "name": f"img_{idx}.png",
+                        "width": 1000,
+                        "height": 1000,
+                        "source_url": image_url,
+                        "source_thumb_url": image_url,
+                        "size": 121200,
+                        "type": "image"
+                    })
+                responses.append({
+                    "reply_message": {
+                        "content": "Hình ảnh",
+                        "metadata": metadata,
+                        "postback": "",
+                        "forward_to_cs": False
+                    }
+                })
+
+        # Xử lý videos response
+        for response in final_answer.data.content:
+            if response["type"] == "videos":
+                metadata = []
+                for idx, video_url in enumerate(response["content"], 1):
+                    # Tạo thumbnail cho video
+                    thumbnail_filename = f"thumbnail_{thread_id}_{idx}.jpg"
+                    thumbnail_path = os.path.join(THUMBNAIL_DIR, thumbnail_filename)
+                    try:
+                        generate_thumbnail(video_url, thumbnail_path)
+                        # Tạo URL cho thumbnail (giả sử server của bạn serve static files từ thư mục static)
+                        thumbnail_url = f"/static/thumbnails/{thumbnail_filename}"
+                    except Exception as e:
+                        logger.error(f"Error generating thumbnail: {e}")
+                        thumbnail_url = video_url  # Fallback to video URL if thumbnail generation fails
+
+                    metadata.append({
+                        "name": f"video_{idx}.mp4",
+                        "width": 1080,
+                        "height": 1920,
+                        "src_thumb_url": thumbnail_url,
+                        "src_url": video_url,
+                        "size": 4170635,
+                        "type": "video"
+                    })
+                responses.append({
+                    "reply_message": {
+                        "content": "Video",
+                        "metadata": metadata,
+                        "postback": "",
+                        "forward_to_cs": False
+                    }
+                })
+
+
+        result = json.dumps({   
+            "data": responses  
+        }, ensure_ascii=False, indent=4)
+        print("result: ",result)
+        yield result
+
+    return StreamingResponse(
+        generate_response(),
+        media_type="application/json"
     )
-    
-    # Gọi hàm xử lý logic từ /chat
-    final_answer = await create_answer_eng(chat_logic_input)
-
-    # Thêm tin nhắn từ chatbot vào cuộc hội thoại
-    bot_message = ChatMessage(role=ChatMessageRole.ASSISTANT, content=final_answer.data.content)
-    conversation_history[thread_id].append(bot_message)
-
-    # Kiểm tra xem đã có bản ghi nào với thread_id và user_id chưa
-    existing_history = db.query(ChatHistory).filter_by(thread_id=thread_id, user_id=user_id).first()
-
-    if existing_history:
-        # Nếu đã có, nối thêm các tin nhắn mới vào conversation hiện có
-        existing_history.conversation += "\n" + "\n".join([f"{msg.role}: {msg.content}" for msg in conversation_history[thread_id]])
-        db.commit()
-    else:
-        # Nếu chưa có, tạo một bản ghi mới
-        conversation_text = "\n".join([f"{msg.role}: {msg.content}" for msg in conversation_history[thread_id]])
-        db.add(ChatHistory(thread_id=thread_id, user_id=user_id, conversation=conversation_text))
-        db.commit()
-
-    logger.info(f"Toàn bộ cuộc hội thoại cho thread_id {thread_id} đã được lưu vào cơ sở dữ liệu.")
-
-    return {
-        "data": {
-            "reply_message": {
-                "content": str(final_answer.data.content),
-                "metadata": {},
-                "postback": "",
-                "forward_to_cs": False
-            }
-        }
-    }

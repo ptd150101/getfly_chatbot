@@ -8,7 +8,6 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from starlette.middleware.sessions import SessionMiddleware
 
 
 # Cấu hình logging
@@ -16,11 +15,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(debug=True)
-# AI_CHATBOT_URL = os.getenv("AI_CHATBOT_URL", "http://127.0.0.1:6379")
-# top_k = 11
-
-# # Thêm SessionMiddleware để quản lý session
-# app.add_middleware(SessionMiddleware, secret_key="supersecretkey")
 
 # Add CORS middleware
 origins = [
@@ -49,4 +43,4 @@ app.include_router(chatbot_router.chat_router, prefix=chatbot_endpoints[:-1])
 app.add_exception_handler(RequestValidationError, custom_exception_handler)
 
 if __name__ == "__main__":
-    uvicorn.run("run:app", host="0.0.0.0", port=7000, reload=False)
+    uvicorn.run("run:app", host="0.0.0.0", port=2222, reload=True)
