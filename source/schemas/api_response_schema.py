@@ -34,6 +34,7 @@ class IngestData(BaseModel):
 class ChatMessageRole(str, Enum):
     ASSISTANT = "assistant"
     USER = "user"
+    SYSTEM = "system"
     PREVIOUS_SUMMARY_HISTORY = "previous_summary_history"
 
 
@@ -66,7 +67,8 @@ class ChatLogicOutputData(BaseModel):
     status: Status = Status(code=200, message="OK")
     metadata: Dict = {}
     summary_history: str = ""
-
+    references: List[Dict] = []
+    original_answer: str = ""
 
 class ChatLogicResponse(BaseModel):
     data: ChatLogicOutputData
@@ -76,7 +78,9 @@ def make_response(
     api_code,
     content=None,
     log=False,
-    summary_history=None
+    summary_history=None,
+    references=None,
+    original_answer=None
 ):
     # if only api_code, get message from mapping
     message = ChatbotServiceException(api_code).result["message"]
@@ -92,7 +96,9 @@ def make_response(
         return ChatLogicResponse(
             data=ChatLogicOutputData(
                 status=status,
-                summary_history=summary_history
+                summary_history=summary_history,
+                references=references,
+                original_answer=original_answer
             )
         )
     else:
@@ -100,25 +106,8 @@ def make_response(
             data=ChatLogicOutputData(
                 status=status,
                 content=content,
-                summary_history=summary_history
+                summary_history=summary_history,
+                references=references,
+                original_answer=original_answer
             )
         )
-
-
-
-####################################################################
-class PhoneChatInput(BaseModel):
-    user_id: Optional[str] = None
-    model: str = "gemini-pro"
-    content: str = ""
-    histories: List[ChatMessage] = []
-    phone_number: str = ""
-
-class PhoneChatOutput(BaseModel):
-    content: str = ""
-    phone_number: str = ""
-    status: Status = Status(code=200, message="OK")
-class PhoneChatOutputError(BaseModel):
-    content: str = ""
-    phone_number: str = ""
-    status: Status = Status(code=-502, message="Error")

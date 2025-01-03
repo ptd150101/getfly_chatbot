@@ -7,20 +7,24 @@ from .chat_generator import VertexAIChatGenerator
 from .enrichment import Enrichment
 from .answer_generator import AnswerGenerator
 from .document_retriever import DocumentRetriever
-from .answer_generator import AnswerGenerator
 from .embedder import Embedder
 from .translate import Translate
 from .summary import Summary
-from .spell_correct import SpellCorrect
+from .spell_correct import InputValidator
 from .routing_question import RoutingQuestion
 from .abstract_query import AbstractQuery
 from .database import get_db
 from source.config.setting_bot import GETFLY_BOT_SETTINGS
 import traceback
-from config.env_config import DEFAULT_ANSWER, CREDENTIALS_PATH
+from config.env_config import (
+    DEFAULT_ANSWER, CREDENTIALS_PATH,
+    OVERLOAD_MESSAGE, CS_MESSAGE, NO_RELEVANT_GETFLY_MESSAGE
+)
 from google.oauth2.service_account import Credentials
-import json
-
+from .single_query import SingleQuery
+from .multi_query import MultiQuery
+from .detect_context_string import DetectPlatform
+import re
 
 credentials = Credentials.from_service_account_file(
     CREDENTIALS_PATH,
@@ -34,18 +38,21 @@ class AI_Chatbot_Service:
 
     def __init__(self):
         generator_pro = VertexAIGenerator(
+            # model="gemini-2.0-flash-exp",
             model="gemini-1.5-pro-002",
             project_id="communi-ai",
             location="asia-southeast1",
             credentials=credentials
             )
         generator_flash = VertexAIGenerator(
+            # model="gemini-2.0-flash-exp",
             model="gemini-1.5-flash-002",
             project_id="communi-ai",
             location="asia-southeast1",
             credentials=credentials
             )
         chat_generator = VertexAIChatGenerator(
+            # model="gemini-2.0-flash-exp",
             model="gemini-1.5-pro-002",
             project_id="communi-ai",
             location="asia-southeast1",
@@ -53,6 +60,7 @@ class AI_Chatbot_Service:
             )
         
         chat_generator_flash = VertexAIChatGenerator(
+            # model="gemini-2.0-flash-exp",
             model="gemini-1.5-flash-002",
             project_id="communi-ai",
             location="asia-southeast1",
@@ -82,7 +90,7 @@ class AI_Chatbot_Service:
             chat_generator=chat_generator_flash,
             settings=GETFLY_BOT_SETTINGS
             )
-        self.spell_correct = SpellCorrect(
+        self.spell_correct = InputValidator(
             generator=generator_flash,
             max_retries=20, 
             retry_delay=2.0
@@ -102,149 +110,192 @@ class AI_Chatbot_Service:
             max_retries=20, 
             retry_delay=2.0
         )
+        self.single_query = SingleQuery(
+            generator=generator_flash,
+            max_retries=20, 
+            retry_delay=2.0
+        )
+        self.multi_query = MultiQuery(
+            generator=generator_flash,
+            max_retries=20, 
+            retry_delay=2.0
+        )
+
+        self.detect_platform = DetectPlatform(
+            generator=generator_flash,
+            max_retries=20, 
+            retry_delay=2.0
+        )
+
+
 
     @observe(name="AI_Chatbot_Service_Answer")
     async def create_response(self, user_data: ChatLogicInputData):
         langfuse_context.update_current_trace(
-            user_id=user_data.user_name,  # Assuming user_data contains a user_id attribute
+            user_id=user_data.user_name,
             tags=["STAGING", "GETFLY"]
         )
         try:
             original_question = user_data.content
             summary_history = user_data.summary
-            corrected_question = json.loads(await self.spell_correct.run(user_data=user_data, question=original_question))
-            if corrected_question['routing'] == "UNCORRECT":
-                responses = []
-                responses.append({
-                    "type": "text",
-                    "content": DEFAULT_ANSWER
-                })
-                return -202, responses, user_data.summary
+            corrected_question = {
+                "correct_query": original_question,
+                "routing": "CORRECT"
+            }
 
+            # if corrected_question.get("routing", "") == "UNCORRECT":
+            #     return -202, [{"type": "text", "content": DEFAULT_ANSWER}], user_data.summary, [], DEFAULT_ANSWER
 
+            # platform_response = await self.detect_platform.run(question=corrected_question.get('correct_query', ''))
+            # platform = platform_response.get('platform', '')
+
+            routing_question = await self.routing_question.run(corrected_question.get('correct_query', ''))
+            responses = []
+
+            # if routing_question.get("customer_service_request") is True:
+            #     return 200, [{"type": "text", "content": CS_MESSAGE}], user_data.summary, [], CS_MESSAGE
+
+            # else:
+            # if routing_question.get("is_getfly_relevant", "") is False:
+            #     return 200, [{"type": "text", "content": NO_RELEVANT_GETFLY_MESSAGE}], user_data.summary, [], NO_RELEVANT_GETFLY_MESSAGE
+
+            # Tối ưu hóa logic cho việc lấy tài liệu
+            relevant_documents, seen_ids = [], set()
+            if routing_question.get("complexity_score", "") > 7:
+                multi_query = await self.multi_query.run(user_data=user_data, question=corrected_question['correct_query'])
+                child_prompts = multi_query.get('child_prompt_list', [])
+                original_query = corrected_question['correct_query']
             else:
-                enrichment_query = await self.enrichment.run(user_data=user_data, question=corrected_question['correct_query'])
-                enrichment_query = json.loads(enrichment_query)
-                routing_query = enrichment_query.get('routing', '')
-                relevant_documents = []
-                seen_ids = set()
-                original_backup_documents = []
-                parent_prompt = ""
-                backup_documents = []
+                single_query = (await self.single_query.run(user_data=user_data, question=corrected_question['correct_query'])).get("rewrite_prompt", "")
+                child_prompts = [single_query]
+                original_query = single_query
 
-                
-                if routing_query == "RAG":
-                    abstract_query = await self.abstract_query.run(corrected_question['correct_query'])
+            for query in child_prompts:
+                documents = self.document_retriever.run(query=query, threshold=0.35)
+                for doc in documents['final_rerank']:
+                    if doc['id'] not in seen_ids:
+                        relevant_documents.append(doc)
+                        seen_ids.add(doc['id'])
+
+            if not relevant_documents:
+                documents = self.document_retriever.run(query=corrected_question.get('correct_query', ''), threshold=0.35)
+                for doc in documents['final_rerank']:
+                    if doc['id'] not in seen_ids:
+                        relevant_documents.append(doc)
+                        seen_ids.add(doc['id'])
+
+            # Gọi answer_generator với relevant_documents (có thể rỗng hoặc có dữ liệu)
+            answer = await self.answer_generator.run(
+                messages=user_data.histories,
+                relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=False) if relevant_documents else [],
+                summary_history=summary_history,
+                original_query=original_question,
+            )
+
+            is_query_answerable = answer.get("is_query_answerable", "")
+            if is_query_answerable is False:
+                return 200, [{"type": "text", "content": DEFAULT_ANSWER}], user_data.summary, [], DEFAULT_ANSWER
+
+            original_answer = answer.get("answer", "")
+            references = answer.get("references", [])
+
+            responses.append({
+                "type": "text",
+                "content": f"{self.answer_generator.format_answer(original_answer).get('answer', '')}"
+            })
+
+            # Tạo references với link nhúng
+            if references:
+                embedded_links = []
+                parent_headers = {}  # Tạo từ điển để lưu các header cha
 
 
-                    parent_prompt = enrichment_query.get('parent_prompt', '').strip()
-                    child_prompts = enrichment_query.get('child_prompt_list', [])
-                    child_prompts.append(parent_prompt)
-                    child_prompts.append(abstract_query)
-                    for query in child_prompts:  # Lặp qua từng câu hỏi trong danh sách querys
-                        documents = self.document_retriever.run(query=query, threshold=0.35)
-                        final_documents = documents['final_rerank']
-                        backup_documents = documents['backup_rerank']
-
-
-                        for doc in final_documents:
-                            if doc['id'] not in seen_ids:
-                                relevant_documents.append(doc)
-                                seen_ids.add(doc['id'])
-
-
-                    if relevant_documents == []:
-                        documents = self.document_retriever.run(query=corrected_question['correct_query'], threshold=0.35)
-                        final_documents = documents['final_rerank']
-                        original_backup_documents = documents['backup_rerank']
-                        for doc in final_documents:
-                            if doc['id'] not in seen_ids:
-                                relevant_documents.append(doc)
-                                seen_ids.add(doc['id'])
-
-                    if relevant_documents == []:
-                        for doc in backup_documents + original_backup_documents:
-                            if doc['id'] not in seen_ids:
-                                relevant_documents.append(doc)
-                                seen_ids.add(doc['id'])
+                def clean_link(link):
+                    # Xóa phần /~/revisions/X4jWLQC5Kpi3KnYF2yLa từ link
+                    cleaned_url = re.sub(r'/~/revisions/[A-Za-z0-9]+', '', link)
                     
+                    return cleaned_url
 
-                # Gọi answer_generator với relevant_documents (có thể rỗng hoặc có dữ liệu)
-                answer = await self.answer_generator.run(
-                    messages=user_data.histories,
-                    relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=True) if relevant_documents else [],
-                    summary_history=summary_history,
-                    original_query=corrected_question['correct_query'],
-                    transform_query=parent_prompt if parent_prompt else corrected_question['correct_query']
-                )
-                
-                text_answer = self.answer_generator.format_answer(answer)
+                for ref in references:
+                    content_lines = ref.get('page_content', '').split('\n')
+                    
+                    # Lấy dòng đầu tiên
+                    first_line = content_lines[0].strip() if content_lines else ''
+                    
+                    # Tìm header cuối cùng (header có nhiều # nhất)
+                    last_header = None
+                    max_hash_count = 0
+                    
+                    for line in content_lines:
+                        line = line.strip()
+                        if line.startswith('#'):
+                            hash_count = len(line) - len(line.lstrip('#'))
+                            if hash_count >= max_hash_count:
+                                max_hash_count = hash_count
+                                last_header = line.lstrip('# *').rstrip('*')
+                    
+                    if last_header and first_line:
+                        last_header = re.sub(r'\s*<a href="#undefined" id="undefined"></a>', '', last_header)
+                        print("last_header: ", last_header)
+                        # Xử lý first_line để lấy 2 cấp cuối cùng
+                        path_parts = first_line.split('>')
+                        if len(path_parts) >= 2:
+                            first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
+                        elif len(path_parts) == 1:
+                            first_line = path_parts[0].strip()
+                        
+                        first_line = first_line.replace('**', '').replace('>', '›')
+                        last_header = last_header.replace('**', '').replace('>', '›')
+                        title = f"{first_line} › {last_header}"
 
+                        # Gộp các header có chung parent header
+                        parent_header = last_header.split(' › ')[-2] if ' › ' in last_header else None
+                        if parent_header:
+                            if parent_header in parent_headers:
+                                parent_headers[parent_header].append(title)
+                            else:
+                                parent_headers[parent_header] = [title]
+                        else:
+                            embedded_links.append(f"[{title}]({clean_link(ref.get('child_link', ''))})")
 
+                # Tạo chuỗi cho các header đã gộp
+                for parent, titles in parent_headers.items():
+                    combined_title = f"{parent} › " + " › ".join(titles)
+                    link = ref.get('child_link', '')
+                    if link:
+                        embedded_links.append(f"[{combined_title}]({link})")
 
-                responses = []
-                
-                # 1. Text response
-                text_response = {
-                    "type": "text",
-                    "content": text_answer
-                }
-                responses.append(text_response)
-
-                # 2. Images response (nếu có)
-                seen_images = set()
-                images = []
-                for doc in relevant_documents:
-                    if doc.get('images'):
-                        for img in doc['images']:
-                            if img not in seen_images:
-                                images.append(img)
-                                seen_images.add(img)
-                if images:
+                if embedded_links:
+                    references_str = "\n".join(f"- {link}" for link in embedded_links)
                     responses.append({
-                        "type": "images",
-                        "content": images
+                        "type": "text",
+                        "content": f"Xem thêm:\n{references_str}"
                     })
-
-                # 3. Videos response (nếu có)
-                seen_videos = set()
-                videos = []
-                for doc in relevant_documents:
-                    if doc.get('videos'):
-                        for video in doc['videos']:
-                            if video not in seen_videos:
-                                videos.append(video)
-                                seen_videos.add(video)
-                if videos:
-                    responses.append({
-                        "type": "videos",
-                        "content": videos
-                    })
-
-                summary_history = await self.create_summary(
-                    messages=user_data.histories,
-                    previous_summary=summary_history,
-                    assistant_message=text_answer
-                )
-
-                user_data.summary = summary_history
-                # Trả về array của responses
-                return 200, responses, summary_history
+            
 
 
 
-                
+            # Xử lý phản hồi hình ảnh và video
+            for doc in relevant_documents:
+                if doc.get('images'):
+                    responses.append({"type": "images", "content": list(set(doc['images']))})
+                if doc.get('videos'):
+                    responses.append({"type": "videos", "content": list(set(doc['videos']))})
+
+            summary_history = await self.create_summary(
+                messages=user_data.histories,
+                previous_summary=summary_history,
+                assistant_message=original_answer
+            )
+
+            user_data.summary = summary_history
+            return 200, responses, summary_history, references, self.answer_generator.format_answer(original_answer).get('answer', '')
 
         except Exception as e:
             logger.error(f"Error in main create_response: {e}")
             logger.error(f"Traceback:\n{traceback.format_exc()}")
             logger.info("No data found")
-            responses = []
-            responses.append({
-                "type": "text",
-                "content": "Hệ thống hiện đang quá tải, vui lòng thử lại sau"
-            })
-            return -202, responses, user_data.summary
+            return -202, [{"type": "text", "content": OVERLOAD_MESSAGE}], user_data.summary, [], OVERLOAD_MESSAGE
 
 
 

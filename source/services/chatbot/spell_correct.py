@@ -1,69 +1,101 @@
-from .__init__ import *
+from . import *
 from langfuse.decorators import observe
 from utils.log_utils import get_logger
 from .generator import Generator
-import pytz
 import asyncio
-from source.config.env_config import OVERLOAD_MESSSAGE
-from schemas.api_response_schema import ChatLogicInputData
+from source.config.env_config import OVERLOAD_MESSAGE
+from pydantic import BaseModel, Field, field_validator
+from enum import Enum
 
-import json
-# Đặt múi giờ thành múi giờ Việt Nam
-timezone = pytz.timezone('Asia/Ho_Chi_Minh')
 
+
+class InputValidation(str, Enum):
+   """Enum cho các trạng thái routing của spell check"""
+   VALID = "CORRECT"
+   INVALID = "UNCORRECT"
+
+
+class InputAnalysis(BaseModel):
+   """Model phân tích và sửa lỗi chính tả trong câu hỏi của người dùng"""
+   analysis: str = Field(description="Đây là nơi bạn viết các phân tích dùng để phục vụ cho câu trả lời")
+
+   validation: InputValidation = Field(
+      description="CORRECT nếu input có ý nghĩa, UNCORRECT nếu input không có ý nghĩa"
+   )
+   corrected_text: str = Field(
+      description="Văn bản đã được sửa lỗi chính tả và lỗi gõ phím (giữ nguyên văn bản gốc nếu validation là UNCORRECT)"
+   )
+
+   @field_validator('analysis')
+   @classmethod
+   def validate_analysis(cls, v, values) -> str:
+      v = v.strip()
+      # Nếu validation là INVALID, không cần kiểm tra corrected_text
+      if 'validation' in values.data and values.data['validation'] == InputValidation.INVALID:
+         return v
+      # Nếu validation là VALID, corrected_text không được rỗng
+      if not v:
+         raise ValueError('Văn bản đã sửa không được để trống khi validation là CORRECT')
+      return v
+
+
+   @field_validator('corrected_text')
+   @classmethod
+   def validate_corrected_text(cls, v, values) -> str:
+      v = v.strip()
+      # Nếu validation là INVALID, không cần kiểm tra corrected_text
+      if 'validation' in values.data and values.data['validation'] == InputValidation.INVALID:
+         return v
+      # Nếu validation là VALID, corrected_text không được rỗng
+      if not v:
+         raise ValueError('Văn bản đã sửa không được để trống khi validation là CORRECT')
+      return v
+   @field_validator('validation')
+   @classmethod
+   def validate_validation(cls, v) -> InputValidation:
+      if v not in InputValidation:
+         raise ValueError('Giá trị của validation phải là VALID hoặc INVALID')
+      return v
+   
+   
 
 logger = get_logger(__name__)
 system_prompt = """\
 # NHIỆM VỤ
 Bạn có 2 nhiệm vụ chính:
-- Nhiệm vụ 1:
+## Nhiệm vụ 1:
    - Nếu đầu vào của người dùng là một văn bản nhập linh tinh (nội dung trông không có ngữ nghĩa gì), hãy trả về ROUTING là UNCORRECT.
    - Các trường hợp còn lại hãy trả về ROUTING là CORRECT.
+Chỉ thực hiện Nhiệm Vụ 2 nếu Nhiệm Vụ 1 trả về “ROUTING: CORRECT”.
 
-Nếu nhiệm vụ 1 trả về CORRECT thì mới thực hiện nhiệm vụ 2
-- Nhiệm vụ 2: Phát hiện và sửa các lỗi chính tả và lỗi gõ phím (Telex, VNI),... trong văn bản tiếng Việt và sửa lại.
-
+## Nhiệm vụ 2:
+   - Phát hiện và sửa các lỗi chính tả và lỗi gõ phím (Telex, VNI),... trong văn bản tiếng Việt và sửa lại.
 
 # YÊU CẦU:
    1. GIỮ NGUYÊN TỪNG CÂU CHỮ CỦA VĂN BẢN GỐC, CHỈ CẦN SỬA LẠI CHO ĐÚNG.
    2. ĐỪNG cố gắng sửa lỗi chính tả quá mức cần thiết.
-   3. Nhớ kĩ nhiệm vụ của bạn là gì, đừng cố làm những việc không liên quan tới nhiệm vụ.
-   4. Phải dựa vào toàn bộ dữ liệu đầu vào được cung cấp 
+   3. Chỉ thực hiện nhiệm vụ đã được giao, không thực hiện những việc không liên quan.
+   4. Phải dựa vào toàn bộ dữ liệu đầu vào được cung cấp để làm căn cứ sửa lỗi.
 
 # Các lỗi gõ phím phổ biến cần phải sửa bao gồm nhưng không giới hạn ở:
-* Telex: dd => đ, w => ư, ow => ơ, aa => â,...
-* VNI: dd => đ, w => ư, ow => ơ,...
+   * Telex: dd => đ, w => ư, ow => ơ, aa => â,...
 
 # VÍ DỤ
-- "Tôi yeu Viet Nam." => "Tôi yêu Việt Nam."
-- "Ban ddax an com chua?" => "Bạn đã ăn cơm chưa?"
-- "Quran ly kho" => "Quản lý kho"
+   - "Tôi yeu Viet Nam." => "Tôi yêu Việt Nam."
+   - "Ban ddax an com chua?" => "Bạn đã ăn cơm chưa?"
+   - "Quran ly kho" => "Quản lý kho"
 
 
-# DỮ LIỆU ĐẦU VÀO
-Đầu vào của người dùng:
+# Đầu vào của người dùng:
 ```
-<user's input>
 {question}
-</user's input>
 ```
-
-
-# ĐỊNH DẠNG ĐẦU RA (TUÂN THỦ CHÍNH XÁC)
-Câu trả lời của bạn luôn bao gồm hai phần (Hai khối phần tử):
-<ROUTING>
-CORRECT hoặc UNCORRECT
-</ROUTING>
-<CORRECTED_TEXT>
-Đây là nơi bạn chỉ xuất ra văn bản đã được sửa lỗi chính tả, lỗi đánh máy sai,... Không thêm bất kỳ bình luận nào.
-</CORRECTED_TEXT>
 """
 
 
 
 
-
-class SpellCorrect:
+class InputValidator:
    def __init__(
       self,
       generator: Generator,
@@ -74,38 +106,28 @@ class SpellCorrect:
       self.max_retries = max_retries
       self.retry_delay = retry_delay
 
-   @observe(name="SpellCorrect")
-   async def run(self, user_data: ChatLogicInputData, question: str) -> str:
-      taken_messages = user_data.histories[-5:-1]
-      # Giả sử taken_messages là danh sách các tin nhắn trong chat history
-      chat_history: str = "\n".join(map(lambda message: f"{message.role}: {message.content}", taken_messages))
-      summary_history: str = user_data.summary
-      
-      
+   @observe(name="InputValidator")
+   async def run(self, question: str) -> str:
       for attempt in range(self.max_retries):
          try:
-            text = await self.generator.run(
-               prompt=system_prompt.format(summary_history=summary_history,
-                                           chat_history=chat_history,
-                                           question=question
-                                           ),
-               temperature=0.1
+            response = await self.generator.run(
+                     prompt = system_prompt.format(
+                        question=question,
+                        ),
+                     temperature = 0.2,
+                     response_model=InputAnalysis,
             )
-            correct_query = text.split("<CORRECTED_TEXT>")[1].split("</CORRECTED_TEXT>")[0].strip()
-            routing = text.split("<ROUTING>")[1].split("</ROUTING>")[0].strip()
-
-            correct_query = correct_query.strip('```').strip() if correct_query.startswith('```') else correct_query.strip() 
-            routing = routing.strip('```').strip() if routing.startswith('```') else routing.strip() 
+            return {
+               "analysis": response.analysis,
+               "routing": response.validation.value,
+               "correct_query": response.corrected_text if response.validation == InputValidation.VALID else question
+            }
          
-            return json.dumps({
-               "correct_query": correct_query,
-               "routing": routing
-               })
          
-         except (asyncio.TimeoutError, ConnectionError, Exception) as e:
-            if attempt < self.max_retries - 1:
-               logger.warning(f"Lỗi khi gọi Enrichment (lần thử {attempt + 1}/{self.max_retries}): {str(e)}")
-               await asyncio.sleep(self.retry_delay * (2 ** attempt))  # Exponential backoff
-            else:
-               logger.error("Đã hết số lần thử lại. Không thể tăng cường.")
-               return OVERLOAD_MESSSAGE
+         except Exception as e:
+               if attempt < self.max_retries - 1:
+                  logger.warning(f"Lỗi khi kiểm tra đầu vào (lần thử {attempt + 1}/{self.max_retries}): {str(e)}")
+                  await asyncio.sleep(self.retry_delay * (2 ** attempt))
+               else:
+                  logger.error("Đã hết số lần thử lại. Không thể kiểm tra đầu vào.")
+                  return OVERLOAD_MESSAGE

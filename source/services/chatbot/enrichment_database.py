@@ -1,55 +1,67 @@
-import sys
-import os
-
-# Thêm path của thư mục source vào PYTHONPATH
-current_dir = os.path.dirname(os.path.abspath(__file__))
-source_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-sys.path.append(source_dir)
-from langfuse.decorators import observe
-from source.services.chatbot.generator import Generator, VertexAIGenerator
-from source.services.chatbot.database import get_db, Embedding
-from google.oauth2.service_account import Credentials
+from generator import Generator
+from logging import getLogger
 import asyncio
-from tenacity import retry, wait_exponential
+from dotenv import load_dotenv
+import os
+from pydantic import BaseModel, Field, field_validator
 
-credentials = Credentials.from_service_account_file(
-    "/home/datpt/project/communi_ai_6061cfee10dd.json",
-    scopes=['https://www.googleapis.com/auth/cloud-platform']
-)
+class ContextualRetrieval(BaseModel):
+    analysis: str = Field(description="Phân tích ngữ cảnh được cung cấp: Bao gồm chunk và toàn bộ văn bản")
+    contextual_retrieval: str = Field(description="Nội dung của chunk được viết lại để truy xuất các tài liệu liên quan từ cơ sở dữ liệu vector")
+
+    @field_validator('analysis')  # Sửa tên trường ở đây
+    @classmethod
+    def validate_analysis(cls, v) -> str:
+        if not v.strip():
+            raise ValueError('Nội dung prompt không được để trống')
+        return v
+
+
+    @field_validator('contextual_retrieval')  # Sửa tên trường ở đây
+    @classmethod
+    def validate_contextual_retrieval(cls, v) -> str:
+        if not v.strip():
+            raise ValueError('Nội dung prompt không được để trống')
+        return v
+
+
+
+logger = getLogger(__name__)
+load_dotenv()
+
+
 
 system_prompt = """\
-# HƯỚNG DẪN
-Nhiệm vụ của bạn là làm phong phú nội dung được viết dưới dạng markdown, để tăng cường hiệu quả cho kỹ thuật xếp hạng lại (reranking). Dưới đây là các bước cụ thể bạn cần thực hiện:
+Bạn là một trợ lý AI chuyên về phần mềm CRM (phần mềm quản lý & chăm sóc khách hàng toàn diện), đặc biệt cho phần mềm Getfly CRM. Nhiệm vụ của bạn là cung cấp ngữ cảnh ngắn gọn, phù hợp cho một đoạn văn từ tài liệu hướng dẫn sử dụng của Getfly CRM.
 
-1. **Tạo tài liệu tự giải thích**: Đảm bảo rằng đầu ra có thể được đọc như một tài liệu độc lập và tự giải thích bằng tiếng Việt, không cần tham chiếu bất kỳ tài liệu "nguồn" nào hoặc các tham chiếu bên ngoài.
- 
-2. **Tổ chức nội dung có logic**: Sử dụng các tiêu đề rõ ràng để tổ chức nội dung một cách hợp lý và dễ dàng theo dõi.
-
-3. **Tránh sử dụng định dạng markdown**: Tập trung vào văn bản mô tả và thông tin để tăng cường khả năng tìm kiếm toàn diện hơn là định dạng markdown.
-
-4. **Tuân thủ phạm vi của nội dung gốc**: Chỉ làm phong phú nội dung dựa trên những gì đã được cung cấp - không thêm thông tin không được nêu rõ hoặc ngụ ý trực tiếp bởi nguồn.
-
-5. **Đơn giản hóa nội dung**: Khi không có đủ nội dung để mở rộng một khía cạnh cụ thể, để phần đó trống thay vì tạo ra bổ sung giả định.
-
-6. **Trả lại nội dung duy nhất**: Chỉ trả lại nội dung đã làm phong phú như yêu cầu, không có bất kỳ giải thích thêm nào.
-
-Dưới đây là phần nội dung markdown mẫu, bạn sẽ cần làm phong phú nó theo các hướng dẫn trên:
-
-```markdown
-{content}
+Đây là tài liệu hướng dẫn sử dụng:
+```
+<document>
+{document}
+</document>
 ```
 
-Sau khi nhận được nội dung thực tế, bạn sẽ làm phong phú nó thêm mà không làm thay đổi ý nghĩa gốc của nội dung ban đầu.
+Đây là đoạn văn mà chúng tôi muốn đặt trong ngữ cảnh của toàn bộ tài liệu:
+```
+<chunk>
+{chunk}
+</chunk>
+```
 
+Suy nghĩ từng bước và thực hiện theo các hướng dẫn sau:
+1. Xác định tính năng hoặc chức năng chính được thảo luận (ví dụ: quản lý khách hàng, chăm sóc khách hàng, theo dõi giao dịch, báo cáo thống kê).
 
-# ĐỊNH DẠNG ĐẦU RA
-Câu trả lời của bạn luôn bao gồm hai phần (Hai khối phần tử):
-<ANALYZING>
-Đây là nơi bạn viết phân tích của mình (Phân tích của bạn nên bao gồm: Lý luận, Vì sao lại có những nội dung như vậy, Các mối phụ thuộc, Ngôn ngữ sử dụng)
-</ANALYZING>
-<REWRITTEN_QUERY>
-Đây là nơi bạn chỉ xuất ra nội dung độc lập thực tế. (Giữ nguyên ngôn ngữ như đầu vào của người dùng). Chỉ xuất ra nội dung viết lại độc lập. Không thêm bất kỳ bình luận nào.
-</REWRITTEN_QUERY>
+2. Đề cập đến các tình huống hoặc kịch bản sử dụng liên quan (ví dụ: quy trình tạo lead, quy trình chăm sóc khách hàng, báo cáo hiệu suất hàng tháng).
+
+3. Nếu có thể, lưu ý cách thông tin này liên quan đến hiệu quả sử dụng phần mềm, cải thiện hiệu suất công việc hoặc tối ưu hóa quy trình chăm sóc khách hàng.
+
+4. Bao gồm bất kỳ tính năng hoặc hướng dẫn quan trọng nào giúp người dùng sử dụng phần mềm hiệu quả hơn.
+
+5. Bao gồm bất kỳ số liệu hoặc phần trăm quan trọng nào cung cấp ngữ cảnh đáng chú ý.
+
+6. Không sử dụng các cụm từ như "Đoạn văn này đề cập đến" hoặc "Phần này cung cấp". Thay vào đó, hãy trực tiếp nêu ngữ cảnh.
+
+7. Hãy đưa ra ngữ cảnh ngắn gọn để đặt đoạn văn này trong toàn bộ tài liệu nhằm cải thiện khả năng tìm kiếm đoạn văn trong cơ sở dữ liệu vector.
 """
 
 
@@ -59,61 +71,32 @@ class EnrichmentDatabase:
     def __init__(
         self,
         generator: Generator,
+        max_retries: int = 20,
+        retry_delay: float = 2.0
     ) -> None:
         self.generator = generator
+        self.max_retries = max_retries
+        self.retry_delay = retry_delay
 
-    @retry(
-        wait=wait_exponential(multiplier=1, min=4, max=10)
-    )
-    @observe(name="EnrichmentDatabase") 
-    async def run(self, chunk_id: int, page_content: str) -> str:
-        text = await self.generator.run(
-            prompt=system_prompt.format(content=page_content),
-            temperature=0.2
-        )
-
-
-        text = text.split("<REWRITTEN_QUERY>")[1].split("</REWRITTEN_QUERY>")[0].strip()
-        
-        return text.strip('```').strip() if text.startswith('```') else text.strip() 
-
-        
-
-    
-
-
-if __name__ == "__main__":
-    # Lấy database session
-    db = next(get_db())
-    
-    # Khởi tạo và chạy enrichment
-    generator_flash = VertexAIGenerator(
-        model="gemini-1.5-pro-002", 
-        project_id="communi-ai", 
-        location="asia-southeast1", 
-        credentials=credentials
-    )
-    enrichment = EnrichmentDatabase(generator=generator_flash)
-
-    # Lấy tất cả records cần xử lý
-    embeddings = db.query(Embedding).filter(
-        Embedding.customer_id == 'VPBank').all()
-
-    async def process_all():
-        for embedding in embeddings:
+    async def run(self, document, page_content: str) -> str:
+        for attempt in range(self.max_retries):
             try:
-                print(f"Processing chunk {embedding.chunk_id}")
-                enriched_text = await enrichment.run(
-                    chunk_id=embedding.chunk_id,
-                    page_content=embedding.page_content
+                text = await self.generator.run(
+                    prompt=system_prompt.format(
+                        document=document,
+                        chunk=page_content,
+                        ),
+                    temperature=0.2,
+                    response_model=ContextualRetrieval,
                 )
-                embedding.enriched_content = enriched_text
-                db.commit()
-                print(f"Successfully processed chunk {embedding.chunk_id}")
-                await asyncio.sleep(3)  # Delay 3s
-            except Exception as e:
-                print(f"Error processing chunk {embedding.chunk_id}: {str(e)}")
-                continue
 
-    # Chạy tất cả trong 1 event loop
-    asyncio.run(process_all())
+                result = {
+                    "analysis": text.analysis,
+                    "contextual_retrieval": text.contextual_retrieval,
+                }
+                return f"{result.get('contextual_retrieval', '')}\n\n{page_content}"
+            except Exception as e:
+                if attempt < self.max_retries - 1:
+                    await asyncio.sleep(self.retry_delay * (2 ** attempt))
+                else:
+                    return os.getenv("OVERLOAD_MESSAGE")

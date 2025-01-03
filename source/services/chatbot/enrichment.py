@@ -7,7 +7,7 @@ from datetime import datetime
 import pytz
 import json
 import asyncio
-from source.config.env_config import OVERLOAD_MESSSAGE
+from source.config.env_config import OVERLOAD_MESSAGE
 # Đặt múi giờ thành múi giờ Việt Nam
 timezone = pytz.timezone('Asia/Ho_Chi_Minh')
 
@@ -262,4 +262,4 @@ class Enrichment:
                await asyncio.sleep(self.retry_delay * (2 ** attempt))  # Exponential backoff
             else:
                logger.error("Đã hết số lần thử lại. Không thể tăng cường.")
-               return OVERLOAD_MESSSAGE
+               return OVERLOAD_MESSAGE
