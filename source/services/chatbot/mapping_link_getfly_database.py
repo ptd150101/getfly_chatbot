@@ -7,8 +7,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 source_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
 sys.path.append(source_dir)
 
-# Hardcode DATABASE_URL
-os.environ['DATABASE_URL'] = "postgresql://postgres:123@localhost:1502/outline"
+# Hardcode DB_URL
+os.environ['DB_URL'] = "postgresql://postgres:123@localhost:1502/outline"
 
 from source.services.chatbot.database import Embedding, SessionLocal
 from sqlalchemy import select, update, and_, text

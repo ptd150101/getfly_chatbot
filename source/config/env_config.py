@@ -2,29 +2,22 @@ from dotenv import load_dotenv
 import os
 load_dotenv("./credentials/.env")  # take environment variables from .env.
 
-RUNTIME_ENVIRONMENT = os.getenv("RUNTIME_ENVIRONMENT")
-PORT_NUMBER = int(os.getenv("PORT_NUMBER", 6379))
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-MILVUS_USERNAME = os.getenv("MILVUS_USERNAME")
-MILVUS_PASSWORD = os.getenv("MILVUS_PASSWORD")
-MILVUS_HOST = os.getenv("MILVUS_HOST")
-MILVUS_PORT = os.getenv("MILVUS_PORT")
-MILVUS_DB = os.getenv("MILVUS_DB")
 LANGFUSE_PUBLIC_KEY = os.getenv("LANGFUSE_PUBLIC_KEY")
 LANGFUSE_SECRET_KEY = os.getenv("LANGFUSE_SECRET_KEY")
 LANGFUSE_HOST = os.getenv("LANGFUSE_HOST")
-TF_ENABLE_ONEDNN_OPTS = os.getenv('TF_ENABLE_ONEDNN_OPTS')
-TF_CPP_MIN_LOG_LEVEL = os.getenv('TF_CPP_MIN_LOG_LEVEL')
-GOOGLE_CLOUD_PROJECT = os.getenv('GOOGLE_CLOUD_PROJECT')
+
+DB_HOST=os.getenv("DB_HOST")
+DB_NAME=os.getenv("DB_NAME")
+DB_PASSWORD=os.getenv("DB_PASSWORD")
+DB_PORT=os.getenv("DB_PORT")
+DB_USER=os.getenv("DB_USER")
+DB_URL=f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 
 
-DATABASE_URL = os.getenv("DATABASE_URL")
-BOT_API_URL = os.getenv("BOT_API_URL")
-WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET")
-OUTLINE_API_KEY = os.getenv("OUTLINE_API_KEY")
+
+
+
 DEFAULT_ANSWER = os.getenv("DEFAULT_ANSWER")
 CREDENTIALS_PATH = os.getenv("CREDENTIALS_PATH")
 

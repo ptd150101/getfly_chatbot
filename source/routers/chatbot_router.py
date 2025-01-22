@@ -73,11 +73,11 @@ async def create_answer_eng(user_data: ChatLogicInputData):
 
 
 
-async def typing_message(thread_id: str, app_id: str = "1vkxsq0xau7"):
+async def typing_message(thread_id: str, app_id: str = "2lyusxedjmq"):
     url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/threads/{thread_id}/typing"
     payload = {}
     headers = {
-    'X-PiScale-Bot-Token': '6872016403399478:DQq64DXH9D59W9xGkKLz3svlIkfZluAaAYRW6TrG'
+    'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
     }
 
     async with aiohttp.ClientSession() as session:
@@ -87,11 +87,11 @@ async def typing_message(thread_id: str, app_id: str = "1vkxsq0xau7"):
 
 
 
-async def send_message_to_thread(thread_id: str, message: str, app_id: str = "1vkxsq0xau7"):
+async def send_message_to_thread(thread_id: str, message: str, app_id: str = "2lyusxedjmq"):
     """Gửi tin nhắn đến thread thông qua API"""
     url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
     headers = {
-        'X-PiScale-Bot-Token': '6872016403399478:DQq64DXH9D59W9xGkKLz3svlIkfZluAaAYRW6TrG'
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
     }
     payload = {
         "thread_id": thread_id,
@@ -176,13 +176,13 @@ async def handle_restart_chat(communi_thread_id: str, message: str):
     return False, None
 
 
-async def send_rating_message(thread_id: str, app_id: str = "1vkxsq0xau7"):
+async def send_rating_message(thread_id: str, app_id: str = "2lyusxedjmq"):
     """
     Gửi tin nhắn mời đánh giá với quick reply
     """
     url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
     headers = {
-        'X-PiScale-Bot-Token': '6872016403399478:DQq64DXH9D59W9xGkKLz3svlIkfZluAaAYRW6TrG'
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
     }
     text = """Getfly Chatbot rất vui được hỗ trợ Bạn và hy vọng sớm gặp lại Bạn trong thời gian tới.
 Để nâng cao chất lượng dịch vụ, Getfly rất mong nhận được ý kiến góp ý của Bạn. Bạn vui lòng dành ít phút đánh giá chất lượng hỗ trợ của Getfly Chatbot theo mức độ hài lòng với thang điểm từ 1⭐️ đến 5⭐️ theo danh mục dưới đây:
@@ -241,6 +241,90 @@ async def send_rating_message(thread_id: str, app_id: str = "1vkxsq0xau7"):
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
             return await response.json()
+
+
+
+
+
+
+
+async def send_quick_reply_connect_cs_team(thread_id: str, app_id: str = "2lyusxedjmq"):
+    """
+    Gửi tin nhắn mời đánh giá với quick reply
+    """
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    text = """Xin lỗi, dựa vào tài liệu được cung cấp, tôi không tìm thấy câu trả lời cho câu hỏi của bạn. Bạn vui lòng mô tả câu hỏi kĩ hơn hoặc kết nối tới CSKH."""
+    payload = {
+        "thread_id": thread_id,
+        "body": {
+            "text": text,
+            "metadata": [
+                {
+                    "type": "quick_reply",
+                    "quick_reply": {
+                        "items": [
+                            {
+                                "label": "Kết nối với CSKH",
+                                "action": {
+                                    "type": 2,
+                                    "payload": "connect_cs_team"
+                                }
+                            },
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post(url, headers=headers, json=payload) as response:
+            return await response.json()
+
+
+
+
+
+async def send_quick_reply_connect_cs_team_no_text(thread_id: str, app_id: str = "2lyusxedjmq"):
+    """
+    Gửi tin nhắn mời đánh giá với quick reply
+    """
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    payload = {
+        "thread_id": thread_id,
+        "body": {
+            "text": "",
+            "metadata": [
+                {
+                    "type": "quick_reply",
+                    "quick_reply": {
+                        "items": [
+                            {
+                                "label": "Kết nối với CSKH",
+                                "action": {
+                                    "type": 2,
+                                    "payload": "connect_cs_team"
+                                }
+                            },
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post(url, headers=headers, json=payload) as response:
+            return await response.json()
+
+
+
 
 rating_tasks = {}
 async def check_and_send_rating(thread_id: str, communi_thread_id: str):
@@ -340,7 +424,7 @@ async def save_conversation_history(db: Session, thread_id: int, history: list):
         raise
 
 
-async def connect_to_cs_team(thread_id: str, app_id: str = "1vkxsq0xau7"):
+async def connect_to_cs_team(thread_id: str, app_id: str = "2lyusxedjmq"):
     """
     Kết nối với team CSKH thông qua API
     """
@@ -348,7 +432,7 @@ async def connect_to_cs_team(thread_id: str, app_id: str = "1vkxsq0xau7"):
         url = f"https://{app_id}.api.piscale.com/conversation-navigator/v1.0/manage"
         
         headers = {
-            'X-PiScale-Bot-Token': '6872016403399478:DQq64DXH9D59W9xGkKLz3svlIkfZluAaAYRW6TrG',
+            'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x',
             'Content-Type': 'application/json'
         }
         
@@ -492,9 +576,49 @@ async def handle_chat(communi_thread_id: str, message: str):
                                 conversation=conversation_text,
                                 created_at=datetime.now()
                             ))
-                    # elif response["type"] == "quick_reply":
-                    #     await send_message_to_thread(communi_thread_id, response["content"])
-                    #     return True, {"status": "success", "message": "Message sent"}
+                    elif response["type"] == "text_no_relevant":
+                        await send_quick_reply_connect_cs_team(communi_thread_id)
+                        return True, {
+                            "data":{
+                                "status": "success",
+                            },
+                            "message": "Message sent"
+                            }
+                    elif response["type"] == "text_no_answerable":
+                        await send_message_to_thread(communi_thread_id, response["content"])
+                        typing_task.cancel()
+                        # Cập nhật conversation history
+                        bot_message = {
+                            "role": ChatMessageRole.ASSISTANT,
+                            "content": response["content"]
+                        }
+                        if "Xem thêm:" not in response["content"]:
+                            conversation_history.append(bot_message)
+                            await save_conversation_history(db, thread.thread_id, conversation_history)
+                        # Cập nhật DB
+                        if existing_history:
+                            existing_history.conversation += "\n" + "\n".join([
+                                f"{msg['role']}: {msg['content']}" 
+                                for msg in conversation_history
+                            ])
+                            existing_history.display_name = user_name
+                            existing_history.created_at = datetime.now()
+                        else:
+                            conversation_text = "\n".join([
+                                f"{msg['role']}: {msg['content']}" 
+                                for msg in conversation_history
+                            ])
+                            db.add(ChatHistory(
+                                thread_id=thread.thread_id,
+                                user_id=user_id,
+                                display_name=user_name,
+                                conversation=conversation_text,
+                                created_at=datetime.now()
+                            ))
+
+                        await send_quick_reply_connect_cs_team_no_text(communi_thread_id)
+
+
                 # Cập nhật thread
                 thread.message_pairs_count += 1
                 thread.last_bot_response = datetime.now()

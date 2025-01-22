@@ -1,4 +1,3 @@
-from . import *
 from langfuse.decorators import observe, langfuse_context
 from utils.log_utils import get_logger
 from schemas.api_response_schema import ChatLogicInputData
@@ -14,17 +13,21 @@ from .spell_correct import InputValidator
 from .routing_question import RoutingQuestion
 from .abstract_query import AbstractQuery
 from .database import get_db
-from source.config.setting_bot import GETFLY_BOT_SETTINGS
 import traceback
-from config.env_config import (
-    DEFAULT_ANSWER, CREDENTIALS_PATH,
-    OVERLOAD_MESSAGE, CS_MESSAGE, NO_RELEVANT_GETFLY_MESSAGE
-)
+from config.env_config import CREDENTIALS_PATH, DEFAULT_ANSWER, OVERLOAD_MESSAGE
 from google.oauth2.service_account import Credentials
 from .single_query import SingleQuery
 from .multi_query import MultiQuery
 from .detect_context_string import DetectPlatform
+from .detect_language import DetectLanguage
 import re
+from .md2text import markdown_to_text
+# from .setting import Setting
+
+# DEFAULT_ANSWER = Setting.default_message
+# OVERLOAD_MESSAGE = Setting.overload_message
+# llm_model = Setting.llm_model
+
 
 credentials = Credentials.from_service_account_file(
     CREDENTIALS_PATH,
@@ -69,12 +72,12 @@ class AI_Chatbot_Service:
 
         self.summary = Summary(
             generator=generator_flash,
-            max_retries=10, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.enrichment = Enrichment(
             generator=generator_flash,
-            max_retries=10, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.db = next(get_db())
@@ -83,50 +86,53 @@ class AI_Chatbot_Service:
             url="http://35.197.153.145:8231/embed",
             batch_size=1,
             max_length=4096,
-            max_retries=20,
+            max_retries=5,
             retry_delay=2.0 
         )
         self.answer_generator = AnswerGenerator(
             chat_generator=chat_generator_flash,
-            settings=GETFLY_BOT_SETTINGS
             )
         self.spell_correct = InputValidator(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.routing_question = RoutingQuestion(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.translate = Translate(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.abstract_query = AbstractQuery(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.single_query = SingleQuery(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
         self.multi_query = MultiQuery(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
 
         self.detect_platform = DetectPlatform(
             generator=generator_flash,
-            max_retries=20, 
+            max_retries=5, 
             retry_delay=2.0
         )
-
+        self.detect_language = DetectLanguage(
+            generator=generator_flash,
+            max_retries=5, 
+            retry_delay=2.0
+        )
 
 
     @observe(name="AI_Chatbot_Service_Answer")
@@ -143,25 +149,15 @@ class AI_Chatbot_Service:
                 "routing": "CORRECT"
             }
 
-            # if corrected_question.get("routing", "") == "UNCORRECT":
-            #     return -202, [{"type": "text", "content": DEFAULT_ANSWER}], user_data.summary, [], DEFAULT_ANSWER
-
-            # platform_response = await self.detect_platform.run(question=corrected_question.get('correct_query', ''))
-            # platform = platform_response.get('platform', '')
+            language_response = await self.detect_language.run(question=original_question)
+            language = language_response.get('language', '')
 
             routing_question = await self.routing_question.run(corrected_question.get('correct_query', ''))
             responses = []
 
-            # if routing_question.get("customer_service_request") is True:
-            #     return 200, [{"type": "text", "content": CS_MESSAGE}], user_data.summary, [], CS_MESSAGE
-
-            # else:
-            # if routing_question.get("is_getfly_relevant", "") is False:
-            #     return 200, [{"type": "text", "content": NO_RELEVANT_GETFLY_MESSAGE}], user_data.summary, [], NO_RELEVANT_GETFLY_MESSAGE
-
             # Tối ưu hóa logic cho việc lấy tài liệu
             relevant_documents, seen_ids = [], set()
-            if routing_question.get("complexity_score", "") > 7:
+            if routing_question.get("complexity_score", "") > 8:
                 multi_query = await self.multi_query.run(user_data=user_data, question=corrected_question['correct_query'])
                 child_prompts = multi_query.get('child_prompt_list', [])
                 original_query = corrected_question['correct_query']
@@ -171,30 +167,48 @@ class AI_Chatbot_Service:
                 original_query = single_query
 
             for query in child_prompts:
-                documents = self.document_retriever.run(query=query, threshold=0.35)
+                documents = self.document_retriever.run(query=query, threshold=0.3)
                 for doc in documents['final_rerank']:
                     if doc['id'] not in seen_ids:
                         relevant_documents.append(doc)
                         seen_ids.add(doc['id'])
 
             if not relevant_documents:
-                documents = self.document_retriever.run(query=corrected_question.get('correct_query', ''), threshold=0.35)
+                documents = self.document_retriever.run(query=corrected_question.get('correct_query', ''), threshold=0.3)
                 for doc in documents['final_rerank']:
                     if doc['id'] not in seen_ids:
                         relevant_documents.append(doc)
                         seen_ids.add(doc['id'])
 
-            # Gọi answer_generator với relevant_documents (có thể rỗng hoặc có dữ liệu)
-            answer = await self.answer_generator.run(
-                messages=user_data.histories,
-                relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=False) if relevant_documents else [],
-                summary_history=summary_history,
-                original_query=original_question,
-            )
 
-            is_query_answerable = answer.get("is_query_answerable", "")
-            if is_query_answerable is False:
-                return 200, [{"type": "text", "content": DEFAULT_ANSWER}], user_data.summary, [], DEFAULT_ANSWER
+
+            if relevant_documents:
+                # Gọi answer_generator với relevant_documents (có thể rỗng hoặc có dữ liệu)
+                answer = await self.answer_generator.run(
+                    messages=user_data.histories,
+                    relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=False),
+                    summary_history=summary_history,
+                    original_query=original_question,
+                    language=language
+                )
+
+                if answer.get("is_query_answerable", "") == False:
+                    responses.append({
+                        "type": "text_no_answerable",
+                        "content": answer.get("answer", "")
+                    })
+                    return 200, responses, summary_history, [], answer.get("answer", "")
+
+            else:
+                responses.append({
+                    "type": "text_no_relevant",
+                    "content": DEFAULT_ANSWER
+                })
+                return 200, responses, summary_history, [], DEFAULT_ANSWER
+
+            # is_query_answerable = answer.get("is_query_answerable", "")
+            # if is_query_answerable is False:
+            #     return 200, [{"type": "text", "content": DEFAULT_ANSWER}], user_data.summary, [], DEFAULT_ANSWER
 
             original_answer = answer.get("answer", "")
             references = answer.get("references", [])
@@ -207,15 +221,6 @@ class AI_Chatbot_Service:
             # Tạo references với link nhúng
             if references:
                 embedded_links = []
-                parent_headers = {}  # Tạo từ điển để lưu các header cha
-
-
-                def clean_link(link):
-                    # Xóa phần /~/revisions/X4jWLQC5Kpi3KnYF2yLa từ link
-                    cleaned_url = re.sub(r'/~/revisions/[A-Za-z0-9]+', '', link)
-                    
-                    return cleaned_url
-
                 for ref in references:
                     content_lines = ref.get('page_content', '').split('\n')
                     
@@ -223,20 +228,11 @@ class AI_Chatbot_Service:
                     first_line = content_lines[0].strip() if content_lines else ''
                     
                     # Tìm header cuối cùng (header có nhiều # nhất)
-                    last_header = None
-                    max_hash_count = 0
-                    
-                    for line in content_lines:
-                        line = line.strip()
-                        if line.startswith('#'):
-                            hash_count = len(line) - len(line.lstrip('#'))
-                            if hash_count >= max_hash_count:
-                                max_hash_count = hash_count
-                                last_header = line.lstrip('# *').rstrip('*')
+                    last_header = ref.get('last_header', '')
+                    child_link = ref.get('child_link', '')
                     
                     if last_header and first_line:
                         last_header = re.sub(r'\s*<a href="#undefined" id="undefined"></a>', '', last_header)
-                        print("last_header: ", last_header)
                         # Xử lý first_line để lấy 2 cấp cuối cùng
                         path_parts = first_line.split('>')
                         if len(path_parts) >= 2:
@@ -246,24 +242,13 @@ class AI_Chatbot_Service:
                         
                         first_line = first_line.replace('**', '').replace('>', '›')
                         last_header = last_header.replace('**', '').replace('>', '›')
-                        title = f"{first_line} › {last_header}"
-
-                        # Gộp các header có chung parent header
-                        parent_header = last_header.split(' › ')[-2] if ' › ' in last_header else None
-                        if parent_header:
-                            if parent_header in parent_headers:
-                                parent_headers[parent_header].append(title)
-                            else:
-                                parent_headers[parent_header] = [title]
+                        if last_header.endswith(f"{first_line}"):
+                            title = markdown_to_text(last_header)
                         else:
-                            embedded_links.append(f"[{title}]({clean_link(ref.get('child_link', ''))})")
+                            title = f"{first_line} › {markdown_to_text(last_header)}"
+                        print("title: ", title)
 
-                # Tạo chuỗi cho các header đã gộp
-                for parent, titles in parent_headers.items():
-                    combined_title = f"{parent} › " + " › ".join(titles)
-                    link = ref.get('child_link', '')
-                    if link:
-                        embedded_links.append(f"[{combined_title}]({link})")
+                        embedded_links.append(f"[{title}]({child_link})")
 
                 if embedded_links:
                     references_str = "\n".join(f"- {link}" for link in embedded_links)
@@ -271,8 +256,6 @@ class AI_Chatbot_Service:
                         "type": "text",
                         "content": f"Xem thêm:\n{references_str}"
                     })
-            
-
 
 
             # Xử lý phản hồi hình ảnh và video

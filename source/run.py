@@ -1,4 +1,3 @@
-from config.env_config import PORT_NUMBER
 from schemas.api_response_schema import make_response
 from source.routers import chatbot_router
 import uvicorn
@@ -19,7 +18,6 @@ app = FastAPI(debug=True)
 # Add CORS middleware
 origins = [
     "http://localhost",
-    f"http://localhost:{PORT_NUMBER}",
 ]
 
 app.add_middleware(

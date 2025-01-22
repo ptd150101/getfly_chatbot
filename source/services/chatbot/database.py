@@ -7,7 +7,7 @@ from datetime import datetime
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
-from source.config.env_config import DATABASE_URL
+from source.config.env_config import DB_URL
 from pgvector.sqlalchemy import Vector
 import structlog
 import json
@@ -19,7 +19,7 @@ vietnam_tz = pytz.timezone('Asia/Ho_Chi_Minh')
 """
 ### Cấu hình database
 """
-engine = create_engine(DATABASE_URL, json_serializer=lambda obj: json.dumps(obj, ensure_ascii=False))
+engine = create_engine(DB_URL, json_serializer=lambda obj: json.dumps(obj, ensure_ascii=False))
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()

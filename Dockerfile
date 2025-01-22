@@ -1,15 +1,17 @@
-FROM python:3.10-slim
+FROM python:3.11-slim
 
-RUN apt-get update && apt-get install -y git
- 
+RUN apt-get update && apt-get install -y gcc libpq-dev
+
 WORKDIR /app/
 
 COPY ./requirements.txt ./requirements.txt
- 
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
- 
-WORKDIR /app/
- 
+
+RUN pip install uv
+
+RUN uv pip install --system -r requirements.txt
+
+
 COPY . .
 
-CMD ["python", "source/run4.py"]
+EXPOSE 2000
+CMD ["python", "source/run.py"]

@@ -3,7 +3,7 @@ from utils.log_utils import get_logger
 from .generator import Generator
 import asyncio
 from source.config.env_config import OVERLOAD_MESSAGE
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field
 
 
 
@@ -23,32 +23,6 @@ class QuestionAnalysis(BaseModel):
    is_getfly_relevant: bool = Field(
       description="Chỉ ra xem đầu vào của người dùng có liên quan đến Getfly hay không?"
    )
-   
-   @field_validator('analysis')  # Sửa tên trường ở đây
-   @classmethod
-   def validate_analysis(cls, v):
-      if not v.strip():
-            raise ValueError('Phân tích không được để trống')
-      return v
-
-   @field_validator('customer_service_request')
-   def check_customer_service_request(cls, v):
-      if v is None:
-         raise ValueError('Đánh giá tính rõ ràng của đầu vào không được để trống.')
-      return v
-
-
-   @field_validator('complexity_score')
-   @classmethod
-   def validate_complexity_score(cls, v) -> int:
-      if not (1 <= v <= 10):
-            raise ValueError('Complexity score must be between 1 and 5')
-      return v
-   
-   @field_validator('is_getfly_relevant')
-   @classmethod
-   def validate_is_getfly_relevant(cls, v) -> bool:
-      return v
 
 
 
