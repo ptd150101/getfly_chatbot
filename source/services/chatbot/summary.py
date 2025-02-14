@@ -44,7 +44,7 @@ Hãy tuân theo các quy tắc sau:
 1. Bản tóm tắt trước: {previous_summary}
 2. Các tin nhắn mới để tích hợp:
     USER: {user_message}
-    GETFLY PRO: {assistant_message}
+    GETFLY SUPPORT: {assistant_message}
 3. Tóm tắt toan bộ nội dung cuộc trò chuyện bằng cách:
 - Chỉ giữ lại những điểm chính, quyết định và ngữ cảnh cần thiết cho các phản hồi trong tương lai
 - Ưu tiên các tương tác gần đây trong khi bảo tồn ngữ cảnh thiết yếu trước đó

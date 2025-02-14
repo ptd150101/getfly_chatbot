@@ -7,19 +7,15 @@ from .database import (
     SessionLocal, User, Thread,
     ChatHistory, ConversationCache
 )
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
-import subprocess
 import aiohttp
 import asyncio
-import traceback
 from sqlalchemy.exc import SQLAlchemyError
 import json
 from sqlalchemy.orm import Session  # Thêm import này
 
 
-THUMBNAIL_DIR = "static/thumbnails"
-os.makedirs(THUMBNAIL_DIR, exist_ok=True)
 
 logger = get_logger(__name__)
 chat_router = APIRouter()
@@ -71,14 +67,51 @@ async def create_answer_eng(user_data: ChatLogicInputData):
 
 
 
+@chat_router.post("/streamlit")
+async def create_answer_streamlit(user_data: ChatLogicInputData):
+    try:
+        if not user_data.content:
+            logger.info("Empty Question")
+            return make_response(-502, content="Empty content")
+        status_code, chatbot_answer, summary_history, references, original_answer = await ai_chatbot.create_response(user_data)
+
+        
+        final_answer = make_response(
+            status_code, 
+            content=chatbot_answer, 
+            summary_history=summary_history,
+            references=references, 
+            original_answer=original_answer
+        )
+        # logger.info(f"Final answer: {final_answer}")
+
+    except Exception as e:
+        chatbot_answer = f"Error in logic function: {e}"
+        final_answer = make_response(
+            -503, 
+            content=[{"type": "text", "content": chatbot_answer}], 
+            summary_history="",
+            references=[], 
+            original_answer=""
+        )
+    return final_answer
+
+
+
 
 
 async def typing_message(thread_id: str, app_id: str = "2lyusxedjmq"):
-    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/threads/{thread_id}/typing"
     payload = {}
+    # if thread_id == "59466218919969":
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/threads/{thread_id}/typing"
     headers = {
     'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
     }
+    # else:
+    #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/chat-bot/v1.0/threads/{thread_id}/typing"
+    #     headers = {
+    #     'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd'
+    #     }
 
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
@@ -89,10 +122,6 @@ async def typing_message(thread_id: str, app_id: str = "2lyusxedjmq"):
 
 async def send_message_to_thread(thread_id: str, message: str, app_id: str = "2lyusxedjmq"):
     """Gửi tin nhắn đến thread thông qua API"""
-    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
-    headers = {
-        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
-    }
     payload = {
         "thread_id": thread_id,
         "body": {
@@ -100,6 +129,18 @@ async def send_message_to_thread(thread_id: str, message: str, app_id: str = "2l
             "is_rtf": True
         }
     }
+    
+    # if thread_id == "59466218919969":
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    # else:
+    #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/chat-bot/v1.0/messages"
+    #     headers = {
+    #         'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd'
+    #     }
+
 
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
@@ -148,7 +189,7 @@ async def handle_restart_chat(communi_thread_id: str, message: str):
                 """)
                 
                 # Gửi tin nhắn chào mừng mới
-                welcome_message = "Chào bạn, mình là Getfly Pro - một trợ lý ảo của Getfly. Mình có thể giúp gì cho bạn?"
+                welcome_message = "Chào bạn, mình là Getfly Support - một trợ lý ảo của Getfly. Mình có thể giúp gì cho bạn?"
                 await send_message_to_thread(communi_thread_id, welcome_message)
                 
                 # Khởi tạo conversation history mới cho thread_id này trong database
@@ -180,10 +221,6 @@ async def send_rating_message(thread_id: str, app_id: str = "2lyusxedjmq"):
     """
     Gửi tin nhắn mời đánh giá với quick reply
     """
-    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
-    headers = {
-        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
-    }
     text = """Getfly Chatbot rất vui được hỗ trợ Bạn và hy vọng sớm gặp lại Bạn trong thời gian tới.
 Để nâng cao chất lượng dịch vụ, Getfly rất mong nhận được ý kiến góp ý của Bạn. Bạn vui lòng dành ít phút đánh giá chất lượng hỗ trợ của Getfly Chatbot theo mức độ hài lòng với thang điểm từ 1⭐️ đến 5⭐️ theo danh mục dưới đây:
 """
@@ -238,6 +275,17 @@ async def send_rating_message(thread_id: str, app_id: str = "2lyusxedjmq"):
         }
     }
 
+    # if thread_id == "59466218919969":
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    # else:
+    #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/chat-bot/v1.0/messages"
+    #     headers = {
+    #         'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd'
+    #     }
+
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
             return await response.json()
@@ -252,10 +300,7 @@ async def send_quick_reply_connect_cs_team(thread_id: str, app_id: str = "2lyusx
     """
     Gửi tin nhắn mời đánh giá với quick reply
     """
-    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
-    headers = {
-        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
-    }
+
     text = """Xin lỗi, dựa vào tài liệu được cung cấp, tôi không tìm thấy câu trả lời cho câu hỏi của bạn. Bạn vui lòng mô tả câu hỏi kĩ hơn hoặc kết nối tới CSKH."""
     payload = {
         "thread_id": thread_id,
@@ -279,6 +324,17 @@ async def send_quick_reply_connect_cs_team(thread_id: str, app_id: str = "2lyusx
             ]
         }
     }
+    # if thread_id == "59466218919969":
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    # else:
+    #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/chat-bot/v1.0/messages"
+    #     headers = {
+    #         'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd'
+    #     }
+
 
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
@@ -292,10 +348,7 @@ async def send_quick_reply_connect_cs_team_no_text(thread_id: str, app_id: str =
     """
     Gửi tin nhắn mời đánh giá với quick reply
     """
-    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
-    headers = {
-        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
-    }
+
     payload = {
         "thread_id": thread_id,
         "body": {
@@ -318,7 +371,16 @@ async def send_quick_reply_connect_cs_team_no_text(thread_id: str, app_id: str =
             ]
         }
     }
-
+    # if thread_id == "59466218919969":
+    url = f"https://{app_id}.api.piscale.com/chat-bot/v1.0/messages"
+    headers = {
+        'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x'
+    }
+    # else:
+    #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/chat-bot/v1.0/messages"
+    #     headers = {
+    #         'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd'
+    #     }
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, json=payload) as response:
             return await response.json()
@@ -429,19 +491,25 @@ async def connect_to_cs_team(thread_id: str, app_id: str = "2lyusxedjmq"):
     Kết nối với team CSKH thông qua API
     """
     try:
+        payload = {
+            "proactively": 2,
+            "state": 1,
+            "thread_id": thread_id
+        }
+        # if thread_id == "59466218919969":
         url = f"https://{app_id}.api.piscale.com/conversation-navigator/v1.0/manage"
         
         headers = {
             'X-PiScale-Bot-Token': '8934013032647511:Ep7u1thiqajzaeEehzKYFKAIqKBcTIW6skEmKr9x',
             'Content-Type': 'application/json'
         }
-        
-        payload = {
-            "proactively": 2,
-            "state": 1,
-            "thread_id": thread_id
-        }
-
+        # else:
+        #     url = f"https://1vkxsq0xau7.staging-api.piscale.com/conversation-navigator/v1.0/manage"
+            
+        #     headers = {
+        #         'X-PiScale-Bot-Token': '6872016393688753:s0nZDNc9JuvhnyfS0lkvXKIb0jqbMFldqbSVnbNd',
+        #         'Content-Type': 'application/json'
+        #     }
         async with aiohttp.ClientSession() as session:
             async with session.post(
                 f"{url}?api_key=fa1b865d9280d4a488afa30fd60216e7",
@@ -665,14 +733,6 @@ async def webhook_handler(request: Request):
         # Lấy nội dung tin nhắn và communi_thread_id
         message = json_data.get("body", {}).get("text", "").lower().strip()
         communi_thread_id = json_data.get("thread_id")  # Đây chính là communi_thread_id
-        if not communi_thread_id:
-            logger.error("Missing thread_id in webhook payload")
-            return {
-                "message": "Missing thread_id"
-            }
-        
-        
-        
         
         db = SessionLocal()
         try:

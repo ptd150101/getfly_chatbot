@@ -179,10 +179,15 @@ Tổng quát, Getfly CRM cung cấp một nền tảng toàn diện hỗ trợ d
 Suy nghĩ thật kĩ và thực hiện từng bước theo flow Mermaid dưới đây:
     A[Bắt đầu] --> C[Dựa vào bối cảnh trò chuyện, nhận định xem có đủ thông tin để trả lời đầu vào của người dùng hay không?]
 
-    C -->|Không đủ thông tin| I[Gửi câu trả lời khéo léo cho người dùng:
+    C -->|Không đủ thông tin| D[Tạo câu trả lời:
+    - Cần tạo câu trả lời khéo léo, vì không đủ thông tin để trả lời    
+    - NO YAPPING
+    - NO GREETING
     - Dẫn dắt họ đến với các thông tin của getfly đã được nêu ở trên
     - Không sử dụng câu hỏi mở
     - Ngôn ngữ của câu trả lời là: {language}]
+    
+    D --> I[Gửi câu trả lời]
     
     C -->|Đủ thông tin| E[Phân tích bối cảnh trò chuyện bao gồm các nội dung dưới đây:
     - Đầu vào của người dùng
@@ -192,11 +197,12 @@ Suy nghĩ thật kĩ và thực hiện từng bước theo flow Mermaid dưới 
     E --> F[Chọn lọc ra những nội dung liên quan nhất đến đầu vào của người dùng]
     
     F --> G[Tạo câu trả lời:
-    - Logic
-    - Tự nhiên
-    - Sâu sắc
+    - NO YAPPING
+    - NO GREETING
+    - Logic, Tự nhiên, Sâu sắc
     - Không sử dụng câu hỏi mở
     - Dùng ít nhất 4 câu
+    - Dùng Markdown để định dạng câu trả lời
     - Ngôn ngữ của câu trả lời là: {language}]
     
     G --> I[Gửi câu trả lời]
@@ -275,7 +281,7 @@ class AnswerGenerator:
         
         
         current_time = datetime.now(timezone).strftime("%A, %Y-%m-%d %H:%M:%S")
-        taken_messages = messages[-5:-1]
+        taken_messages = messages[-11:-1]
         pqa: str = "\n".join(map(lambda message: f"{message.role}: {message.content}", taken_messages))
         def format_document(index, doc):
             doc_start = f"\t<Document {index}>\n"
@@ -360,8 +366,10 @@ class AnswerGenerator:
     @observe(name="FormatAnswer") 
     def format_answer(self, answer: str) -> str:
         answer = answer.replace("```", "")
-        # Thay thế ".  ", "!  ", "?  ", ",  " bằng một dấu cách
-        answer = re.sub(r'([.!?,])\s{2}', ' ', answer)
+        # Thay thế ".  ", "!  ", "?  ", ",  " bằng một dấu cách cho từng dòng
+        answer_lines = answer.split('\n')
+        answer_lines = [re.sub(r'([.!?,])\s{2}', ' ', line) for line in answer_lines]  # Thay thế trong từng dòng
+        answer = '\n'.join(answer_lines)  # Nối lại các dòng
         # Thay thế ký tự xuống dòng \n bằng một dòng mới
         answer = answer.replace('\\n', '\n')
         items = [item.strip() for item in answer.split('\n') if item.strip()]
@@ -380,7 +388,7 @@ class AnswerGenerator:
                             language: str
                             ) -> str:
         current_time = datetime.now(timezone).strftime("%A, %Y-%m-%d %H:%M:%S")
-        taken_messages = messages[-5:-1]
+        taken_messages = messages[-11:-1]
         pqa: str = "\n".join(map(lambda message: f"{message.role}: {message.content}", taken_messages))
 
         # Thêm cấu hình Retry

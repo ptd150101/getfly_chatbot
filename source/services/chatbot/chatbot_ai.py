@@ -144,37 +144,35 @@ class AI_Chatbot_Service:
         try:
             original_question = user_data.content
             summary_history = user_data.summary
-            corrected_question = {
-                "correct_query": original_question,
-                "routing": "CORRECT"
-            }
 
             language_response = await self.detect_language.run(question=original_question)
             language = language_response.get('language', '')
 
-            routing_question = await self.routing_question.run(corrected_question.get('correct_query', ''))
+            # routing_question = await self.routing_question.run(corrected_question.get('correct_query', ''))
             responses = []
 
             # Tối ưu hóa logic cho việc lấy tài liệu
             relevant_documents, seen_ids = [], set()
-            if routing_question.get("complexity_score", "") > 8:
-                multi_query = await self.multi_query.run(user_data=user_data, question=corrected_question['correct_query'])
-                child_prompts = multi_query.get('child_prompt_list', [])
-                original_query = corrected_question['correct_query']
-            else:
-                single_query = (await self.single_query.run(user_data=user_data, question=corrected_question['correct_query'])).get("rewrite_prompt", "")
+            # if routing_question.get("complexity_score", "") > 8:
+            #     multi_query = await self.multi_query.run(user_data=user_data, question=corrected_question['correct_query'])
+            #     child_prompts = multi_query.get('child_prompt_list', [])
+            #     original_query = corrected_question['correct_query']
+            # else:
+            single_query = (await self.single_query.run(user_data=user_data, question=original_question)).get("rewrite_prompt", "")
+            if single_query:
                 child_prompts = [single_query]
-                original_query = single_query
-
+            else:
+                child_prompts = [original_question]
+            
             for query in child_prompts:
-                documents = self.document_retriever.run(query=query, threshold=0.3)
+                documents = self.document_retriever.run(query=query, threshold=0.1)
                 for doc in documents['final_rerank']:
                     if doc['id'] not in seen_ids:
                         relevant_documents.append(doc)
                         seen_ids.add(doc['id'])
 
             if not relevant_documents:
-                documents = self.document_retriever.run(query=corrected_question.get('correct_query', ''), threshold=0.3)
+                documents = self.document_retriever.run(query=original_question, threshold=0.1)
                 for doc in documents['final_rerank']:
                     if doc['id'] not in seen_ids:
                         relevant_documents.append(doc)
@@ -182,29 +180,29 @@ class AI_Chatbot_Service:
 
 
 
-            if relevant_documents:
+            # if relevant_documents:
                 # Gọi answer_generator với relevant_documents (có thể rỗng hoặc có dữ liệu)
-                answer = await self.answer_generator.run(
-                    messages=user_data.histories,
-                    relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=False),
-                    summary_history=summary_history,
-                    original_query=original_question,
-                    language=language
-                )
+            answer = await self.answer_generator.run(
+                messages=user_data.histories,
+                relevant_documents=sorted(relevant_documents, key=lambda doc: doc['cross_score'], reverse=False),
+                summary_history=summary_history,
+                original_query=original_question,
+                language=language
+            )
 
-                if answer.get("is_query_answerable", "") == False:
-                    responses.append({
-                        "type": "text_no_answerable",
-                        "content": answer.get("answer", "")
-                    })
-                    return 200, responses, summary_history, [], answer.get("answer", "")
-
-            else:
+            if answer.get("is_query_answerable", "") == False:
                 responses.append({
-                    "type": "text_no_relevant",
-                    "content": DEFAULT_ANSWER
+                    "type": "text_no_answerable",
+                    "content": answer.get("answer", "")
                 })
-                return 200, responses, summary_history, [], DEFAULT_ANSWER
+                return 200, responses, summary_history, [], answer.get("answer", "")
+
+            # else:
+            #     responses.append({
+            #         "type": "text_no_relevant",
+            #         "content": DEFAULT_ANSWER
+            #     })
+            #     return 200, responses, summary_history, [], DEFAULT_ANSWER
 
             # is_query_answerable = answer.get("is_query_answerable", "")
             # if is_query_answerable is False:
@@ -230,25 +228,32 @@ class AI_Chatbot_Service:
                     # Tìm header cuối cùng (header có nhiều # nhất)
                     last_header = ref.get('last_header', '')
                     child_link = ref.get('child_link', '')
+
+                    # Xử lý first_line để lấy 2 cấp cuối cùng
+                    path_parts = first_line.split('>')
+                    if len(path_parts) >= 2:
+                        first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
+                    elif len(path_parts) == 1:
+                        first_line = path_parts[0].strip()
                     
-                    if last_header and first_line:
+                    first_line = first_line.replace('**', '').replace('>', '›')
+
+
+                    if last_header:
                         last_header = re.sub(r'\s*<a href="#undefined" id="undefined"></a>', '', last_header)
-                        # Xử lý first_line để lấy 2 cấp cuối cùng
-                        path_parts = first_line.split('>')
-                        if len(path_parts) >= 2:
-                            first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
-                        elif len(path_parts) == 1:
-                            first_line = path_parts[0].strip()
-                        
-                        first_line = first_line.replace('**', '').replace('>', '›')
+
                         last_header = last_header.replace('**', '').replace('>', '›')
                         if last_header.endswith(f"{first_line}"):
                             title = markdown_to_text(last_header)
                         else:
                             title = f"{first_line} › {markdown_to_text(last_header)}"
                         print("title: ", title)
-
-                        embedded_links.append(f"[{title}]({child_link})")
+                    else:
+                        title = first_line
+                        
+                        
+                        
+                    embedded_links.append(f"[{title}]({child_link})")
 
                 if embedded_links:
                     references_str = "\n".join(f"- {link}" for link in embedded_links)

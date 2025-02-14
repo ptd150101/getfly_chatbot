@@ -1,9 +1,40 @@
 import streamlit as st
 import requests
 import json
-# API Configuration
-API_URL = "http://localhost:3333"
+import re
+from markdown2 import markdown
+from bs4 import BeautifulSoup
 
+def markdown_to_text(markdown_content):
+    # Convert markdown to HTML with extra features like lists
+    html = markdown(markdown_content, extras=["fenced-code-blocks", "cuddled-lists", "tables", "numbering"])
+    
+    # Parse the HTML to preserve list formatting
+    soup = BeautifulSoup(html, "html.parser")
+    
+    # Process ordered lists and unordered lists
+    def process_list_items(soup):
+        for ol in soup.find_all("ol"):
+            start = int(ol.get("start", 1))  # Get start attribute if exists, default to 1
+            for i, li in enumerate(ol.find_all("li"), start):
+                li.insert_before(f"{i}. ")  # Add numbering before each list item
+            ol.unwrap()  # Remove the ol tag, but keep its contents
+
+        for ul in soup.find_all("ul"):
+            for li in ul.find_all("li"):
+                li.insert_before("- ")  # Add a dash before each list item
+            ul.unwrap()  # Remove the ul tag, but keep its contents
+
+    process_list_items(soup)
+    
+    text = soup.get_text()
+    return text
+
+
+
+
+# API Configuration
+API_URL = "http://localhost:2000/streamlit"
 # Page Configuration 
 st.set_page_config(
     page_title="Getfly Assistant",
@@ -38,7 +69,7 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
 
     try:
         response = requests.post(
-            f"{API_URL}/chat",
+            f"{API_URL}",
             json={
                 "content": prompt,
                 "histories": st.session_state.messages,
@@ -48,12 +79,14 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
 
         if response.status_code == 200:
             responses = response.json()
-            print("responses: ", json.dumps(responses, ensure_ascii=False, indent=4))
             
             references = responses.get("data", {}).get("references", [])
+            print(f"Số lượng references: {len(references)}")
+
             max_ref = min(st.session_state.max_references, len(references))
             selected_references = references[:max_ref]
-            
+
+            print(f"Số lượng selected references: {len(selected_references)}")
             
             original_answer = responses.get("data", {}).get("original_answer", "")
             summary_history = responses.get("data", {}).get("summary_history", "")
@@ -71,42 +104,52 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
                         "content": original_answer
                     })    
 
-
-
                     # Hiển thị references với markdown links
                     if selected_references:
                         embedded_links = []
                         for ref in selected_references:
                             content_lines = ref.get('page_content', '').split('\n')
                             
-                            # Lấy và xử lý dòng đầu tiên để chỉ lấy 2 cấp cuối
-                            first_line = content_lines[0].strip()
-                            path_parts = first_line.split('>')
-                            if len(path_parts) >= 2:
-                                first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
-                            elif len(path_parts) == 1:
-                                first_line = path_parts[0].strip()
+                            # Lấy dòng đầu tiên
+                            first_line = content_lines[0].strip() if content_lines else ''
                             
                             # Tìm header cuối cùng (header có nhiều # nhất)
-                            last_header = None
-                            max_hash_count = 0
+                            last_header = ref.get('last_header', '')
+                            child_link = ref.get('child_link', '')
                             
-                            for line in content_lines:
-                                line = line.strip()
-                                if line.startswith('#'):
-                                    hash_count = len(line) - len(line.lstrip('#'))
-                                    if hash_count >= max_hash_count:
-                                        max_hash_count = hash_count
-                                        last_header = line.lstrip('# *').rstrip('*')
-                            
-                            if last_header and first_line:
-                                first_line = first_line.replace('**', '').replace('>', '›')
-                                last_header = last_header.replace('**', '').replace('>', '›')
-                                title = f"{first_line} › {last_header}"
-                                link = ref.get('chunk_id', '')
-                                if link:
-                                    embedded_links.append(f"[{title}]({link})")
-                        
+                            if first_line:
+                                if last_header:
+                                    last_header = re.sub(r'\s*<a href="#undefined" id="undefined"></a>', '', last_header)
+                                    # Xử lý first_line để lấy 2 cấp cuối cùng
+                                    path_parts = first_line.split('>')
+                                    if len(path_parts) >= 2:
+                                        first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
+                                    elif len(path_parts) == 1:
+                                        first_line = path_parts[0].strip()
+                                    
+                                    first_line = first_line.replace('**', '').replace('>', '›')
+                                    last_header = last_header.replace('**', '').replace('>', '›')
+                                    if last_header.endswith(f"{first_line}"):
+                                        title = markdown_to_text(last_header)
+                                    else:
+                                        title = f"{first_line} › {markdown_to_text(last_header)}"
+                                        
+                                    print(f"[{title}]({child_link})")
+                                    embedded_links.append(f"[{title}]({child_link})")
+                                else:
+                                    path_parts = first_line.split('>')
+                                    if len(path_parts) >= 2:
+                                        first_line = f"{path_parts[-2].strip()} › {path_parts[-1].strip()}"
+                                    elif len(path_parts) == 1:
+                                        first_line = path_parts[0].strip()
+                                    
+                                    first_line = first_line.replace('**', '').replace('>', '›')
+                                    title = f"{first_line}"
+                                        
+                                    print(f"[{title}]({child_link})")
+                                    embedded_links.append(f"[{title}]({child_link})")
+                                                        
+                        print("Embedded links: ", embedded_links)
                         if embedded_links:
                             references_str = "\n".join(f"- {link}" for link in embedded_links)
                             with st.chat_message("assistant"):

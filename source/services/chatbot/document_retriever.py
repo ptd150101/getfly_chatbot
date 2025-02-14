@@ -38,14 +38,14 @@ class DocumentRetriever:
     #     return result
     
 
-    def get_document_texts(self, chunk_ids: List[str]) -> List[str]:
+    def get_document_texts(self, chunk_ids: List[str]) -> Set[str]:  # Thay đổi kiểu trả về thành Set
         # Query từ bảng documents để lấy text đầy đủ cho nhiều doc_id
         results = self.session.execute(
             select(Embedding.text)
             .where(Embedding.chunk_id.in_(chunk_ids))
             .order_by(Embedding.chunk_id)
         ).fetchall()
-        return [result[0] for result in results if result]  # Trả về danh sách các text không rỗng
+        return set(result[0] for result in results if result)  # Trả về danh sách các text không rỗng
 
     def get_child_link_from_last_header(self, last_header: str) -> str:
         result = self.session.execute(
@@ -115,10 +115,12 @@ class DocumentRetriever:
 
 
             if n > 1:
+                print("parent: ", parent)
                 chunk_ids = self.get_all_chunk_ids(parent)
+                print("chunk_ids: ", chunk_ids)
                 # Query text đầy đủ từ bảng documents
                 parent_texts = self.get_document_texts(chunk_ids)
-                merged_text = " ".join(filter(None, parent_texts))
+                merged_text = " ".join(filter(None, list(parent_texts)))
 
 
                 if merged_text:
